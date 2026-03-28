@@ -1,0 +1,3916 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Individual Psychotherapy, Mental Health Assessment, and Consultation | Peggi McCue, LIMHP | Arlington, NE</title>
+    <meta name="description" content="Peggi McCue offers individual psychotherapy, mental health assessment, and consultation in Arlington, Nebraska and surrounding areas.">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&display=swap");
+
+        :root {
+            --bg: #f6f7fb;
+            --surface: #ffffff;
+            --text: #1d2733;
+            --muted: #67768a;
+            --line: #dfe6ef;
+            --brand: #2b6cb0;
+            --brand-dark: #1f4f84;
+            --chip: #ecf2f9;
+            --ok: #2e7d32;
+            --sunset-image: url("https://static.wixstatic.com/media/2e5d054456d94e8bac75df4b9e58cf95.jpg/v1/fill/w_1200,h_1400,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2e5d054456d94e8bac75df4b9e58cf95.jpg");
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--text);
+            background: var(--bg);
+            line-height: 1.5;
+        }
+
+        .page {
+            max-width: 992px;
+            margin: 28px auto 0;
+            padding: 0 16px 40px;
+        }
+
+        .site-intro-header {
+            width: 100%;
+            margin: 0;
+            padding: 12px 16px;
+            background: #fff985;
+            border-top: 1px solid rgba(122, 117, 23, 0.35);
+            border-bottom: 1px solid rgba(122, 117, 23, 0.35);
+            color: #2f2a1f;
+            box-sizing: border-box;
+            width: calc(100% + var(--modal-scrollbar-compensation, 0px));
+            margin-right: calc(-1 * var(--modal-scrollbar-compensation, 0px));
+        }
+
+        .site-intro-header-inner {
+            max-width: 992px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .site-intro-header h2 {
+            margin: 0;
+            font-size: clamp(18px, 2.6vw, 22px);
+            line-height: 1.25;
+            letter-spacing: 0.02em;
+            font-weight: 700;
+            font-family: "Cormorant Garamond", "Times New Roman", Georgia, serif;
+        }
+
+        .layout {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) 360px;
+            gap: 28px;
+            align-items: start;
+        }
+
+        .page-top-background {
+            position: relative;
+            padding: 14px;
+        }
+
+        .page-top-background::before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: -28px;
+            bottom: -26px;
+            left: calc(50% - 50vw);
+            right: calc(50% - 50vw - var(--modal-scrollbar-compensation, 0px));
+            background:
+                linear-gradient(rgba(243, 232, 216, 0.28), rgba(243, 232, 216, 0.18)),
+                var(--sunset-image);
+            background-size: cover;
+            background-position: center 26%;
+            pointer-events: none;
+        }
+
+        .card {
+            background: var(--surface);
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            box-shadow: 0 1px 2px rgba(10, 30, 60, 0.04);
+        }
+
+        .main-card {
+            padding: 24px;
+        }
+
+        .details-breakout {
+            margin-top: 26px;
+        }
+
+        .details-breakout .section:first-child {
+            margin-top: 0;
+        }
+
+        .header-grid {
+            display: grid;
+            grid-template-columns: 170px minmax(0, 1fr);
+            gap: 20px;
+            align-items: center;
+        }
+
+        .photo-wrap {
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--line);
+            background: #e8edf4;
+            height: 220px;
+        }
+
+        .header-grid > div:last-child {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            row-gap: 6px;
+            padding-top: 0;
+            min-height: 220px;
+            position: relative;
+        }
+
+        .photo-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center 14%;
+            display: block;
+        }
+
+        h1 {
+            margin: 0;
+            max-width: none;
+            font-size: 34px;
+            line-height: 1;
+            letter-spacing: -0.02em;
+            color: #1d2733;
+            white-space: nowrap;
+        }
+
+        .profile-name-row {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            flex-wrap: nowrap;
+        }
+
+        .cool-verified {
+            width: 18px;
+            height: 18px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 999px;
+            background: radial-gradient(circle at 30% 25%, #76a8ff 0%, #4f86ea 45%, #2f67d2 100%);
+            box-shadow: 0 1px 0 rgba(255, 255, 255, 0.55) inset, 0 2px 8px rgba(71, 123, 228, 0.35);
+            transform: translateY(1px);
+        }
+
+        .cool-verified svg {
+            width: 12px;
+            height: 12px;
+            fill: #ffffff;
+            display: block;
+        }
+
+        .subtitle {
+            margin-top: 0;
+            color: #2d3f55;
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 1.35;
+            white-space: normal;
+            max-width: 100%;
+        }
+
+        .meta-row {
+            margin-top: 2px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            column-gap: 0;
+            row-gap: 4px;
+            font-size: 13px;
+            line-height: 1.3;
+            color: var(--muted);
+        }
+
+        .meta-location {
+            color: var(--muted);
+            font-weight: 400;
+        }
+
+        .meta-consultation {
+            color: #c62828;
+            font-size: 13px;
+            line-height: 1.3;
+            font-weight: 600;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--ok);
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        .dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: #b5c3d3;
+            margin: 0 2px;
+        }
+
+        .intro {
+            margin-top: 0;
+            font-size: 16px;
+            color: #233449;
+        }
+
+        .intro + .intro {
+            margin-top: 14px;
+        }
+
+        .intro-pending {
+            margin: 10px 0 0;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #c62828;
+        }
+
+        .profile-intro-block {
+            margin-top: 22px;
+        }
+
+        .intro-image-placeholders {
+            margin: 16px 0;
+            display: grid;
+            grid-template-columns: 55% minmax(0, 1fr);
+            grid-template-rows: repeat(2, auto);
+            gap: 12px;
+            outline: 4px solid #c62828;
+            outline-offset: 6px;
+            border-radius: 10px;
+        }
+
+        .intro-image-placeholder {
+            border-radius: 8px;
+            border: 1px solid #d6dee9;
+            background: linear-gradient(135deg, #f5f8fc 0%, #ecf2f9 100%);
+        }
+
+        .intro-image-placeholders .intro-image-placeholder:first-child {
+            grid-row: 1 / span 2;
+        }
+
+        .intro-image-placeholders .intro-image-placeholder:not(:first-child) {
+            aspect-ratio: 1 / 1;
+            width: 100%;
+        }
+
+        .intro-image-note {
+            margin: 12px 0 0;
+            font-size: 13px;
+            line-height: 1.3;
+            color: #c62828;
+            text-align: center;
+            border: 4px solid #c62828;
+            border-radius: 8px;
+            padding: 8px 10px;
+        }
+
+        .consultation-prompt {
+            margin-top: 18px;
+            padding: 16px;
+            background: #ecf1fb;
+            border-radius: 5px;
+            font-family: "Proxima Nova", "Open Sans", "Helvetica Neue", Arial, sans-serif;
+            font-size: 16px;
+            line-height: 24px;
+            color: #2c2d30;
+        }
+
+        .consultation-prompt-link {
+            color: #2c2d30;
+            text-decoration: underline;
+            text-underline-offset: 2px;
+            text-decoration-thickness: 1px;
+        }
+
+        .consultation-prompt-link:hover {
+            color: #1f4f84;
+        }
+
+        .consultation-prompt strong {
+            font-weight: 700;
+        }
+
+        .section {
+            margin-top: 34px;
+            padding-top: 30px;
+            border-top: 1px solid var(--line);
+        }
+
+        .section h2 {
+            margin: 0 0 12px;
+            font-size: 22px;
+            letter-spacing: -0.01em;
+        }
+
+        .kv {
+            margin: 0;
+            display: grid;
+            grid-template-columns: 200px minmax(0, 1fr);
+            gap: 6px 16px;
+        }
+
+        .kv dt {
+            font-weight: 700;
+            color: #2d4057;
+        }
+
+        .kv dd {
+            margin: 0;
+            color: #28384d;
+        }
+
+        .pending-approval {
+            color: #c62828;
+        }
+
+        .kv dd.pending-approval {
+            color: #c62828;
+        }
+
+        .client-focus-section {
+            font-family: "Proxima Nova", "Open Sans", "Helvetica Neue", Arial, sans-serif;
+            color: #2c2d30;
+        }
+
+        .client-focus-title {
+            margin: 0;
+            font-size: 21px;
+            font-weight: 600;
+            line-height: 1;
+            padding-bottom: 24px;
+            color: #2c2d30;
+        }
+
+        .client-focus-container {
+            display: flex;
+            flex-direction: row;
+            gap: 16px;
+            width: 100%;
+        }
+
+        .client-focus-tile {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin: 8px 0;
+            padding: 16px;
+            width: 100%;
+            background: #fff;
+        }
+
+        .client-focus-group-title {
+            margin: 8px 0;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.5;
+            color: #2c2d30;
+        }
+
+        .client-focus-icon {
+            width: 24px;
+            height: 24px;
+            background-repeat: no-repeat;
+            background-position: left center;
+        }
+
+        .client-focus-icon.age-focus {
+            background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' fill='none' viewBox='0 0 22 22'%3E%3Cpath stroke='%23212121' stroke-linecap='square' stroke-miterlimit='10' stroke-width='1.5' d='M1 5V1h4M21 5V1h-4M1 17v4h4M21 17v4h-4M17 18l-2.469-.617a2 2 0 0 1-1.515-1.95v-1.027A6.69 6.69 0 0 0 16 9V8A5 5 0 0 0 6 8v1a6.69 6.69 0 0 0 2.986 5.406v1.027a2 2 0 0 1-1.515 1.95L5 18'/%3E%3C/svg%3E");
+        }
+
+        .client-focus-icon.modality {
+            background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='24' fill='none' viewBox='0 0 25 24'%3E%3Cg stroke='%232c2d30' stroke-linecap='square' stroke-miterlimit='10' stroke-width='1.5' clip-path='url(%23a)'%3E%3Cpath d='M6.667 18.5a4.5 4.5 0 0 0-4.5 4.5v.5h9V23a4.5 4.5 0 0 0-4.5-4.5ZM6.667 15.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5ZM19.667 18.5a4.5 4.5 0 0 0-4.5 4.5v.5h9V23a4.5 4.5 0 0 0-4.5-4.5ZM19.667 15.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5ZM23.167 1.5h-9a1 1 0 0 0-1 1v8l4-4h6a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1Z'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath fill='%23fff' d='M.667 0h24v24h-24z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+        }
+
+        .client-focus-icon.categories {
+            background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23' height='26' fill='none' viewBox='0 0 23 26'%3E%3Cpath stroke='%23212121' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M11.4 15.4a2.4 2.4 0 1 0 0-4.8 2.4 2.4 0 0 0 0 4.8'/%3E%3Cpath stroke='%23212121' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m21.8 12.2-6.4 6.4h-8L1 12.2M7.4 18.6V25M15.4 18.6V25M1 2.64a33.8 33.8 0 0 1 20.8 0v6.322a35.4 35.4 0 0 0-20.8 0z'/%3E%3C/svg%3E");
+        }
+
+        .client-focus-item {
+            display: inline-flex;
+        }
+
+        .client-focus-description {
+            display: inline-flex;
+            line-height: 1.5;
+            color: #2c2d30;
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 0;
+        }
+
+        .client-focus-description.pending-approval {
+            color: #c62828;
+        }
+
+        .force-no-highlight {
+            background-color: transparent;
+        }
+
+        @media (max-width: 800px) {
+            .client-focus-container {
+                flex-direction: column;
+            }
+        }
+
+        .qualifications-section {
+            font-family: "Proxima Nova", "Open Sans", "Helvetica Neue", Arial, sans-serif;
+            color: #2c2d30;
+        }
+
+        .qualifications-section h2 {
+            margin: 0 0 20px;
+            font-size: 22px;
+            line-height: 1.05;
+            letter-spacing: -0.01em;
+            color: #2c2d30;
+        }
+
+        .qualifications-verified-card {
+            display: grid;
+            grid-template-columns: 36px minmax(0, 1fr);
+            gap: 10px;
+            align-items: center;
+            border: 1px solid #d9dde4;
+            border-radius: 7px;
+            background: #ffffff;
+            padding: 12px 14px;
+            margin-bottom: 24px;
+            max-width: 520px;
+        }
+
+        .qualifications-verified-seal {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .qualifications-verified-seal svg {
+            width: 24px;
+            height: 24px;
+            display: block;
+        }
+
+        .qualifications-verified-content {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .qualifications-verified-license {
+            margin: 0;
+            font-size: 14px;
+            line-height: 1.28;
+            color: #2e7d32;
+        }
+
+        .qualifications-verified-name {
+            margin: 0;
+            font-size: 14px;
+            line-height: 1.3;
+            color: #8f99a8;
+        }
+
+        .qualifications-verified-role {
+            margin: 0;
+            font-size: 13px;
+            line-height: 1.25;
+            color: #8f99a8;
+        }
+
+        .qualifications-group + .qualifications-group {
+            margin-top: 20px;
+        }
+
+        .qualifications-layout {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) 402px;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .qualifications-main {
+            min-width: 0;
+        }
+
+        .qualifications-quote {
+            margin-top: 0;
+        }
+
+        .qualifications-quote .finance-quote-copy {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 16px;
+            line-height: 1.4;
+            font-style: italic;
+            color: #c62828;
+        }
+
+        .qualifications-group-title {
+            margin: 0 0 7px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 16px;
+            line-height: 1.15;
+            font-weight: 700;
+            color: #2c2d30;
+        }
+
+        .qualifications-group-icon {
+            width: 16px;
+            height: 16px;
+            color: #2c2d30;
+            flex-shrink: 0;
+            transform: translateY(1px);
+        }
+
+        .qualifications-group-icon svg {
+            width: 16px;
+            height: 16px;
+            display: block;
+            fill: none;
+            stroke: currentColor;
+            stroke-width: 1.7;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .qualifications-line {
+            margin: 0;
+            font-size: 15px;
+            line-height: 1.35;
+            color: #2c2d30;
+        }
+
+        .qualifications-line + .qualifications-line {
+            margin-top: 4px;
+        }
+
+        .qualifications-year {
+            margin: 2px 0 4px;
+            font-size: 13px;
+            line-height: 1.35;
+            color: #8b96a8;
+        }
+
+        .qualifications-section .pending-approval,
+        .qualifications-section .qualifications-year.pending-approval {
+            color: #c62828;
+        }
+
+        .specialties-groups {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .specialties-layout {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) 402px;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .specialties-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .specialties-group-title {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 18px;
+            line-height: 1.25;
+            font-weight: 700;
+            color: #2d4057;
+        }
+
+        .specialties-group-icon {
+            width: 18px;
+            height: 18px;
+            color: #2d4057;
+            flex-shrink: 0;
+        }
+
+        .specialties-group-icon svg {
+            width: 18px;
+            height: 18px;
+            display: block;
+            fill: none;
+            stroke: currentColor;
+            stroke-width: 1.5;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .specialties-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .specialties-list li {
+            font-size: 16px;
+            line-height: 1.35;
+        }
+
+        .specialties-list li + li {
+            margin-top: 4px;
+        }
+
+        .specialties-list--columns {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            column-gap: 42px;
+            row-gap: 6px;
+        }
+
+        .specialties-list--columns li + li {
+            margin-top: 0;
+        }
+
+        .pending-approval-list li {
+            color: #c62828;
+        }
+
+        .specialties-quote-copy {
+            margin: 0;
+            flex: 1;
+            font-size: 16px;
+            line-height: 1.4;
+            font-style: italic;
+            color: #c62828;
+        }
+
+        .finance-section {
+            font-family: "Proxima Nova", "Open Sans", "Helvetica Neue", Arial, sans-serif;
+        }
+
+        .finance-layout {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) 402px;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .finance-heading {
+            margin: 0 0 18px;
+            font-size: 22px;
+            line-height: 1.15;
+            letter-spacing: -0.01em;
+            color: #2c2d30;
+        }
+
+        .finance-subsection + .finance-subsection {
+            margin-top: 24px;
+        }
+
+        .finance-subheading {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin: 0 0 8px;
+            font-size: 16px;
+            line-height: 1.25;
+            font-weight: 700;
+            color: #2c2d30;
+        }
+
+        .finance-subheading-icon {
+            width: 18px;
+            height: 18px;
+            color: #2c2d30;
+            flex-shrink: 0;
+        }
+
+        .finance-subheading-icon--card {
+            width: 22px;
+            height: 16px;
+        }
+
+        .finance-subheading-icon svg {
+            width: 18px;
+            height: 18px;
+            display: block;
+            stroke: currentColor;
+        }
+
+        .finance-copy {
+            margin: 0;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #2c2d30;
+        }
+
+        .finance-copy--pending {
+            color: #c62828;
+        }
+
+        .finance-insurance-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            column-gap: 48px;
+            row-gap: 8px;
+        }
+
+        .finance-insurance-list li {
+            font-size: 16px;
+            line-height: 1.35;
+            color: #2c2d30;
+        }
+
+        .finance-insurance-list--pending li {
+            color: #c62828;
+        }
+
+        .finance-quote {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 16px 20px 18px;
+            background: #fff;
+        }
+
+        .finance-quote-copy-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 6px;
+            margin: 0 0 14px;
+        }
+
+        .finance-quote-copy-icon {
+            width: 14px;
+            height: 14px;
+            flex-shrink: 0;
+            color: #7a8899;
+            transform: translateY(2px);
+        }
+
+        .finance-quote-copy-icon svg {
+            width: 14px;
+            height: 14px;
+            display: block;
+            fill: currentColor;
+        }
+
+        .finance-quote-copy {
+            margin: 0;
+            flex: 1;
+            font-size: 18px;
+            line-height: 1.4;
+            font-style: italic;
+            color: #c62828;
+        }
+
+        .finance-quote-profile {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .finance-quote-avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            border: 1px solid #ddd;
+            object-fit: cover;
+            object-position: center;
+            flex-shrink: 0;
+            display: block;
+            background: #eef3fb;
+        }
+
+        .finance-quote-name {
+            margin: 0;
+            font-size: 16px;
+            line-height: 1.2;
+            font-weight: 600;
+            color: #2c2d30;
+        }
+
+        .finance-quote-role {
+            margin: 2px 0 0;
+            font-size: 13px;
+            line-height: 1.3;
+            color: #2c2d30;
+        }
+
+        .finance-quote-divider {
+            margin: 16px 0 14px;
+            border: 0;
+            border-top: 1px solid #ddd;
+        }
+
+        .finance-quote-cta {
+            margin: 0;
+            font-size: 16px;
+            line-height: 1.35;
+            color: #2c2d30;
+        }
+
+        .finance-quote-cta a {
+            color: #2c2d30;
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+
+        .finance-quote-cta strong {
+            font-weight: 700;
+        }
+
+        .chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .chip {
+            display: inline-flex;
+            align-items: center;
+            padding: 6px 10px;
+            border-radius: 999px;
+            background: var(--chip);
+            border: 1px solid #dae5f2;
+            font-size: 13px;
+            color: #29415b;
+        }
+
+        .treatment-section {
+            font-family: "Proxima Nova", "Open Sans", "Helvetica Neue", Arial, sans-serif;
+            color: #2c2d30;
+        }
+
+        .treatment-layout {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) 402px;
+            gap: 40px;
+            align-items: start;
+        }
+
+        .treatment-heading {
+            margin: 0 0 18px;
+            font-size: 21px;
+            line-height: 1.3;
+            letter-spacing: -0.01em;
+            color: #2c2d30;
+            font-weight: 600;
+        }
+
+        .treatment-group-title {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin: 0 0 10px;
+            font-size: 18px;
+            line-height: 1.5;
+            font-weight: 600;
+            color: #2c2d30;
+        }
+
+        .treatment-group-icon {
+            width: 22px;
+            height: 22px;
+            color: #2c2d30;
+            flex-shrink: 0;
+        }
+
+        .treatment-group-icon svg {
+            width: 22px;
+            height: 22px;
+            display: block;
+            fill: none;
+            stroke: currentColor;
+            stroke-width: 1.5;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .treatment-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            column-gap: 42px;
+            row-gap: 8px;
+        }
+
+        .treatment-list li {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #2c2d30;
+        }
+
+        .treatment-list.pending-approval-list li {
+            color: #c62828;
+        }
+
+        .location-section {
+            font-family: "Proxima Nova", "Open Sans", "Helvetica Neue", Arial, sans-serif;
+            color: #2c2d30;
+        }
+
+        .location-heading {
+            margin: 0;
+            font-size: 21px;
+            font-weight: 600;
+            line-height: 1.5;
+        }
+
+        .location-map {
+            border-radius: 8px;
+            height: 300px;
+            margin-top: 24px;
+            overflow: hidden;
+            width: 100%;
+            border: 2px solid #c62828;
+            background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%201200%20420'%3E%0A%3Crect%20width%3D'1200'%20height%3D'420'%20fill%3D'%23e9edf2'%2F%3E%0A%3Cpath%20d%3D'M0%20280h1200v140H0z'%20fill%3D'%23dfe8d4'%2F%3E%0A%3Cpath%20d%3D'M0%2095h1200'%20stroke%3D'%23cfd8e3'%20stroke-width%3D'36'%2F%3E%0A%3Cpath%20d%3D'M0%20200h1200'%20stroke%3D'%23cfd8e3'%20stroke-width%3D'24'%2F%3E%0A%3Cpath%20d%3D'M160%200v420'%20stroke%3D'%23cfd8e3'%20stroke-width%3D'28'%2F%3E%0A%3Cpath%20d%3D'M410%200v420'%20stroke%3D'%23d5dde8'%20stroke-width%3D'18'%2F%3E%0A%3Cpath%20d%3D'M770%200v420'%20stroke%3D'%23d5dde8'%20stroke-width%3D'18'%2F%3E%0A%3Cpath%20d%3D'M1040%200v420'%20stroke%3D'%23d5dde8'%20stroke-width%3D'18'%2F%3E%0A%3Cpath%20d%3D'M0%20330h1200'%20stroke%3D'%23cad6c6'%20stroke-width%3D'10'%2F%3E%0A%3Cpath%20d%3D'M0%20360h1200'%20stroke%3D'%23cad6c6'%20stroke-width%3D'10'%2F%3E%0A%3Ccircle%20cx%3D'770'%20cy%3D'182'%20r%3D'30'%20fill%3D'%23477be4'%20opacity%3D'.15'%2F%3E%0A%3Cpath%20d%3D'M770%20134c-18%200-32%2013-32%2031%200%2023%2027%2050%2030%2053%201%201%203%202%204%202s3-1%204-2c3-3%2030-30%2030-53%200-18-14-31-32-31Zm0%2043a12%2012%200%201%201%200-24%2012%2012%200%200%201%200%2024Z'%20fill%3D'%23477be4'%2F%3E%0A%3Crect%20x%3D'804'%20y%3D'156'%20rx%3D'8'%20ry%3D'8'%20width%3D'178'%20height%3D'38'%20fill%3D'white'%20stroke%3D'%23cfd6df'%2F%3E%0A%3Ctext%20x%3D'816'%20y%3D'181'%20font-family%3D'Segoe%20UI%2C%20Arial%2C%20sans-serif'%20font-size%3D'20'%20fill%3D'%232c2d30'%3EArlington%2C%20NE%3C%2Ftext%3E%0A%3C%2Fsvg%3E");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .location-map-image {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .location-bicolumn {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) 402px;
+            gap: 40px;
+            align-items: start;
+            padding-top: 24px;
+        }
+
+        .location-primary {
+            min-width: 0;
+        }
+
+        .location-address-and-availability {
+            font-size: 16px;
+            line-height: 1.5;
+            padding: 24px 0;
+        }
+
+        .location-address-section {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .location-address-tile {
+            flex-shrink: 0;
+            width: 50%;
+        }
+
+        .location-address-title {
+            align-items: center;
+            display: inline-flex;
+            gap: 8px;
+            line-height: 1.5;
+            margin-bottom: 8px;
+        }
+
+        .location-address-subheading {
+            margin: 0;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 27px;
+        }
+
+        .location-primary-pin {
+            width: 18px;
+            height: 24px;
+            background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 36 45'%3E%3Cpath fill='%23477be4' d='M17.542 0C8.966 0 0 6.652 0 17.609c0 10.37 15.593 26.217 16.178 26.804.39.391.78.587 1.364.587s.975-.196 1.365-.587c.584-.587 16.178-16.435 16.178-26.804C35.085 6.652 26.119 0 17.542 0m0 23.478c-3.313 0-5.847-2.543-5.847-5.87 0-3.325 2.534-5.869 5.847-5.869s5.848 2.544 5.848 5.87-2.534 5.87-5.848 5.87'/%3E%3Ccircle cx='17.542' cy='17.609' r='5.847' fill='%23fff'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .location-address-lines {
+            margin: 0;
+        }
+
+        .location-address-line {
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        .location-address-phone {
+            display: inline-block;
+            margin-top: 2px;
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .location-link-wrapper {
+            margin: 8px 0 0;
+        }
+
+        .location-link {
+            appearance: none;
+            background: none;
+            border: 0;
+            padding: 0;
+            font: inherit;
+            color: #477be4;
+            text-decoration: none;
+            cursor: pointer;
+            font-weight: 400;
+        }
+
+        .location-link--pending {
+            color: #c62828;
+            cursor: default;
+        }
+
+        .location-link:hover {
+            text-decoration: underline;
+        }
+
+        .location-nearby {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-top: 4px;
+        }
+
+        .location-nearby-title {
+            margin: 0;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 1.5;
+        }
+
+        .location-area-levels {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .location-area-level {
+            flex-basis: 50%;
+            flex-shrink: 0;
+            margin-top: 16px;
+        }
+
+        .location-area-level:nth-child(2n) {
+            padding-left: 8px;
+        }
+
+        .location-area-title {
+            margin: 0 0 8px;
+            font-size: 17px;
+            font-weight: 600;
+            line-height: 1.5;
+        }
+
+        .location-area-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .location-area-list li {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 8px;
+            break-inside: avoid;
+        }
+
+        .location-area-list li:last-child {
+            margin-bottom: 0;
+        }
+
+        .location-area-list a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .location-area-list a.pending-approval {
+            color: #c62828;
+        }
+
+        .location-quote .finance-quote-copy {
+            color: #c62828;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 16px;
+            line-height: 1.4;
+            font-style: italic;
+        }
+
+        .location-quote {
+            padding: 16px 20px 18px;
+        }
+
+        .ready-talk-divider {
+            margin: 28px 0 0;
+            border: 0;
+            border-top: 1px solid #ddd;
+        }
+
+        .ready-talk-band {
+            margin-top: 0;
+            position: relative;
+            padding: 36px 12px 24px;
+        }
+
+        .ready-talk-band::before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: -1px;
+            bottom: -40px;
+            left: calc(50% - 50vw);
+            right: calc(50% - 50vw - var(--modal-scrollbar-compensation, 0px));
+            background:
+                linear-gradient(rgba(243, 232, 216, 0.3), rgba(243, 232, 216, 0.2)),
+                var(--sunset-image);
+            background-size: cover;
+            background-position: center 62%;
+            pointer-events: none;
+        }
+
+        .ready-talk-section {
+            margin: 0;
+            padding: 56px 24px 50px;
+            border-radius: 10px;
+            background: rgba(243, 232, 216, 0.94);
+            border: 1px solid rgba(210, 195, 173, 0.85);
+            text-align: center;
+        }
+
+        .ready-talk-title {
+            margin: 0;
+            font-family: "Lora", Georgia, "Times New Roman", serif;
+            font-size: 54px;
+            line-height: 1.05;
+            letter-spacing: -0.01em;
+            color: #17140f;
+            font-weight: 500;
+        }
+
+        .ready-talk-copy {
+            margin: 18px auto 0;
+            max-width: 840px;
+            font-size: 18px;
+            line-height: 1.5;
+            color: #2c2d30;
+        }
+
+        .ready-talk-actions {
+            margin-top: 28px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .ready-talk-action {
+            appearance: none;
+            border-radius: 999px;
+            min-width: 248px;
+            padding: 11px 28px;
+            font-size: 30px;
+            line-height: 1.2;
+            font-family: "Lora", Georgia, "Times New Roman", serif;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+        }
+
+        .ready-talk-action--primary {
+            border: 1px solid #d8712c;
+            background: #d8712c;
+            color: #fff;
+        }
+
+        .ready-talk-action--primary:hover {
+            background: #bf6324;
+            border-color: #bf6324;
+        }
+
+        .ready-talk-action--secondary {
+            border: 1px solid #17140f;
+            background: transparent;
+            color: #17140f;
+        }
+
+        .ready-talk-action--secondary:hover {
+            background: #17140f;
+            color: #f3e8d8;
+        }
+
+        @media (max-width: 980px) {
+            .location-bicolumn {
+                grid-template-columns: minmax(0, 1fr);
+                gap: 24px;
+            }
+
+            .location-address-tile {
+                width: 100%;
+            }
+
+            .location-area-level {
+                flex-basis: 100%;
+            }
+
+            .location-area-level:nth-child(2n) {
+                padding-left: 0;
+            }
+
+            .ready-talk-divider {
+                margin-top: 22px;
+            }
+
+            .ready-talk-band {
+                margin-top: 0;
+                padding: 24px 8px 16px;
+            }
+
+            .ready-talk-band::before {
+                background-position: center 68%;
+            }
+
+            .ready-talk-section {
+                padding: 42px 18px 36px;
+            }
+
+            .ready-talk-title {
+                font-size: 40px;
+                line-height: 1.1;
+            }
+
+            .ready-talk-copy {
+                font-size: 16px;
+                margin-top: 14px;
+            }
+
+            .ready-talk-actions {
+                margin-top: 22px;
+                gap: 12px;
+            }
+
+            .ready-talk-action {
+                min-width: min(248px, 100%);
+                width: 100%;
+                max-width: 330px;
+                font-size: 26px;
+            }
+        }
+
+        .treatment-list .has-tooltip {
+            text-decoration-line: underline;
+            text-decoration-style: dotted;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 3px;
+        }
+
+        .treatment-quote .finance-quote-copy {
+            color: #c62828;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 16px;
+            line-height: 1.4;
+            font-style: italic;
+        }
+
+        .treatment-quote {
+            padding: 16px 20px 18px;
+        }
+
+        @media (max-width: 980px) {
+            .treatment-layout {
+                grid-template-columns: minmax(0, 1fr);
+                gap: 20px;
+            }
+
+            .treatment-list {
+                grid-template-columns: minmax(0, 1fr);
+                column-gap: 0;
+            }
+        }
+
+        .sidebar {
+            position: sticky;
+            top: 16px;
+            display: grid;
+            gap: 12px;
+        }
+
+        .connect {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            padding: 14px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            background: #fff;
+        }
+
+        .lets-connect-info {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 12px;
+        }
+
+        .lets-connect-content {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .lets-connect-title {
+            margin: 0;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 1.1;
+            white-space: nowrap;
+            color: #2c2d30;
+        }
+
+        .lets-connect-image {
+            width: 64px;
+            height: 64px;
+            min-width: 64px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 1px solid #ddd;
+            background: #f5f7f9;
+            object-fit: cover;
+            object-position: center;
+            display: block;
+            flex-shrink: 0;
+        }
+
+        .lets-connect-phone-number {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin: 0;
+            color: #2c2d30;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+
+        .lets-connect-phone-number:hover {
+            text-decoration: underline;
+        }
+
+        .lets-connect-phone-icon {
+            flex-shrink: 0;
+        }
+
+        .lets-connect-email-button {
+            width: 100%;
+        }
+
+        .lets-connect-contact-button-email {
+            align-items: center;
+            background-color: #477be4;
+            border: 1px solid #477be4;
+            border-radius: 6px;
+            padding: 11px 14px;
+            font-size: 15px;
+            font-weight: 600;
+            line-height: 1.5;
+            color: #fff;
+            cursor: pointer;
+            display: inline-flex;
+            justify-content: center;
+            text-decoration: none;
+            user-select: none;
+            width: 100%;
+            min-height: 46px;
+            transition: border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+        }
+
+        .lets-connect-contact-button-email:hover {
+            background-color: #3e6cc8;
+            border-color: #3e6cc8;
+        }
+
+
+        .aside-card {
+            padding: 16px;
+        }
+
+        .at-a-glance {
+            margin-top: 24px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 14px;
+            background: #fff;
+            font-family: "Proxima Nova", "Open Sans", "Helvetica Neue", Arial, sans-serif;
+        }
+
+        .at-a-glance_heading {
+            margin: 0;
+            font-size: 17px;
+            font-weight: 600;
+            line-height: 24px;
+            color: #2c2d30;
+        }
+
+        .sections-container,
+        .sections-container .section {
+            display: flex;
+            flex-direction: column;
+            row-gap: 14px;
+        }
+
+        .sections-container {
+            row-gap: 14px;
+        }
+
+        .sections-container .section {
+            border-top: 1px solid #ddd;
+            padding-top: 14px;
+            margin-top: 0;
+        }
+
+        .sections-container .section:first-of-type,
+        .sections-container .section.borderless {
+            border-top: none;
+            padding-top: 0;
+        }
+
+        .sections-container .section:first-of-type {
+            row-gap: 5px;
+        }
+
+        .sections-container .section:nth-of-type(2) {
+            padding-top: 8px;
+        }
+
+        .at-a-glance_row {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #2c2d30;
+            font-size: 15px;
+            line-height: 1.2;
+        }
+
+        .at-a-glance_row_appointments {
+            min-height: 32px;
+            align-items: center;
+        }
+
+        .at-a-glance_row_appointments .row-symbol {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: #ecf1fb;
+            color: #477be4;
+        }
+
+        .at-a-glance_row_appointments .row-symbol svg {
+            width: 18px;
+            height: 18px;
+            stroke: #477be4;
+        }
+
+        .at-a-glance_row_appointments > div {
+            line-height: 1.25;
+        }
+
+        .at-a-glance_row--loc {
+            align-items: center;
+            gap: 10px;
+        }
+
+        .at-a-glance_row--loc .row-symbol {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: #ecf1fb;
+            color: #477be4;
+        }
+
+        .at-a-glance_row--loc .row-symbol svg {
+            width: 18px;
+            height: 18px;
+            stroke: #477be4;
+        }
+
+        .row-symbol {
+            width: 18px;
+            height: 18px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            color: #2c2d30;
+        }
+
+        .row-symbol svg {
+            width: 18px;
+            height: 18px;
+            display: block;
+            stroke: currentColor;
+        }
+
+        .at-a-glance-plain-list {
+            margin: 0;
+            padding-left: 18px;
+            color: #2c2d30;
+            font-size: 15px;
+            line-height: 1.4;
+        }
+
+        .at-a-glance-plain-list li + li {
+            margin-top: 6px;
+        }
+
+        .at-a-glance-feature-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .at-a-glance_row--feature {
+            align-items: center;
+            gap: 10px;
+            line-height: 1.3;
+        }
+
+        .at-a-glance_row--feature > div {
+            color: #c62828;
+        }
+
+        .feature-scroll-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            cursor: pointer;
+            user-select: none;
+            text-decoration: none;
+        }
+
+        .feature-scroll-link:focus-visible {
+            outline: 2px solid #477be4;
+            outline-offset: 2px;
+            border-radius: 3px;
+        }
+
+        .feature-scroll-chevron {
+            width: 11px;
+            height: 11px;
+            color: #2c2d30;
+            flex-shrink: 0;
+            transform: translateY(1px);
+        }
+
+        .feature-scroll-chevron svg {
+            width: 11px;
+            height: 11px;
+            display: block;
+            fill: none;
+            stroke: currentColor;
+            stroke-width: 1.9;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .feature-scroll-link--specialties {
+            display: inline;
+        }
+
+        .feature-scroll-link--specialties .feature-scroll-chevron {
+            display: inline-flex;
+            vertical-align: baseline;
+            margin: 0 6px;
+            transform: translateY(1px);
+        }
+
+        .at-a-glance_row--feature .row-symbol {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: #ecf1fb;
+            color: #477be4;
+        }
+
+        .at-a-glance_row--feature .row-symbol svg {
+            width: 18px;
+            height: 18px;
+            stroke: #477be4;
+        }
+
+        .at-a-glance-lower-section {
+            gap: 8px;
+        }
+
+        .at-a-glance-subheading {
+            margin: 0;
+            font-size: 19px;
+            line-height: 1.2;
+            font-weight: 600;
+            color: #2c2d30;
+        }
+
+        .at-a-glance-lower-details {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            font-size: 15px;
+            line-height: 1.35;
+            color: #2c2d30;
+        }
+
+        .location-video-row {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-top: 4px;
+        }
+
+        .location-video-quote {
+            flex: 1;
+            margin: 0;
+            font-size: 15px;
+            line-height: 1.35;
+            color: #c62828;
+            font-style: italic;
+        }
+
+        .location-video-thumb {
+            width: 96px;
+            height: 96px;
+            border-radius: 6px;
+            border: 1px solid #d8d8d8;
+            background: linear-gradient(145deg, #dfe5ec 0%, #f4f6f9 100%);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+
+        .location-video-thumb::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 24px;
+            transform: translateX(-50%);
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            border: 2px solid #8691a0;
+            background: transparent;
+        }
+
+        .location-video-thumb::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 54px;
+            transform: translateX(-50%);
+            width: 42px;
+            height: 22px;
+            border: 2px solid #8691a0;
+            border-bottom: 0;
+            border-radius: 22px 22px 0 0;
+        }
+
+        .address {
+            color: #2c2d30;
+        }
+
+        .address-line {
+            margin: 0;
+            font-size: 15px;
+            line-height: 1.2;
+        }
+
+        .address-line--struck {
+            text-decoration-line: line-through;
+            text-decoration-color: #c62828;
+            text-decoration-thickness: 2px;
+            text-decoration-skip-ink: none;
+        }
+
+        .address-line-map-link {
+            margin-left: 4px;
+            color: #c62828;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 1.5;
+            text-decoration: none;
+            text-transform: none;
+        }
+
+        .address-line-map-link:hover {
+            color: #a61f1f;
+            text-decoration: underline;
+        }
+
+        .at-a-glance_row_service-area {
+            margin-top: 2px;
+        }
+
+        .at-a-glance_row_service-area > div {
+            color: #c62828;
+        }
+
+        .at-a-glance_row_service-area .row-symbol svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .address .phone {
+            display: inline-block;
+            margin-top: 0;
+            color: #2c2d30;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 1.2;
+        }
+
+        .address .phone:hover {
+            text-decoration: underline;
+        }
+
+        .controls {
+            display: flex;
+            gap: 6px;
+            flex-wrap: nowrap;
+        }
+
+        .at-a-glance_row--availability {
+            align-items: flex-start;
+        }
+
+        .at-a-glance_row--availability {
+            gap: 6px;
+            padding: 0 2px;
+        }
+
+        .availability-quote-icon {
+            width: 14px;
+            height: 14px;
+            flex-shrink: 0;
+            color: #7a8899;
+            transform: translateY(2px);
+        }
+
+        .availability-quote-icon svg {
+            width: 14px;
+            height: 14px;
+            display: block;
+            fill: currentColor;
+        }
+
+        .availability-copy {
+            flex: 1;
+            line-height: 1.35;
+            font-style: italic;
+            color: #c62828;
+        }
+
+        .contact-buttons {
+            border: 1px solid #477be4;
+            border-radius: 4px;
+            background: #477be4;
+            color: #ffffff;
+            font-size: 13px;
+            font-weight: 600;
+            line-height: 1.2;
+            text-decoration: none;
+            padding: 8px 10px;
+            cursor: pointer;
+            min-height: 36px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            white-space: nowrap;
+            min-width: 0;
+            flex: 1 1 0;
+            transition: border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+        }
+
+        .contact-buttons:hover {
+            background: #3e6cc8;
+            border-color: #3e6cc8;
+            color: #ffffff;
+        }
+
+        .aside-card h4 {
+            margin: 0 0 10px;
+            font-size: 18px;
+        }
+
+        .aside-list {
+            margin: 0;
+            padding-left: 18px;
+            color: #2d3f55;
+            font-size: 14px;
+        }
+
+        .endorsement {
+            background: #fafcfe;
+            border: 1px solid var(--line);
+            border-radius: 10px;
+            padding: 12px;
+            font-size: 14px;
+            color: #30445d;
+            margin-top: 8px;
+        }
+
+        .endorsements-section {
+            font-family: "Proxima Nova", "Open Sans", "Helvetica Neue", Arial, sans-serif;
+            color: #2c2d30;
+            border: 2px solid #c62828;
+            border-radius: 12px;
+            padding: 24px 16px 18px;
+            background: rgba(255, 248, 248, 0.72);
+            position: relative;
+        }
+
+        .endorsements-section::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: -18px;
+            border-top: 1px solid var(--line);
+        }
+
+        .endorsements-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+
+        .endorsements-title {
+            margin: 0;
+            font-size: 37px;
+            line-height: 1.1;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+            color: #c62828;
+        }
+
+        .endorsements-controls {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .endorsements-control {
+            width: 40px;
+            height: 40px;
+            border-radius: 999px;
+            border: 1px solid #ddd;
+            background: #fff;
+            color: #7a7f87;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            cursor: pointer;
+        }
+
+        .endorsements-control--disabled {
+            opacity: 0.6;
+            cursor: default;
+        }
+
+        .endorsements-control svg {
+            width: 16px;
+            height: 16px;
+            display: block;
+            stroke: currentColor;
+            fill: none;
+            stroke-width: 1.8;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .endorsements-carousel {
+            overflow: hidden;
+        }
+
+        .endorsements-track {
+            display: flex;
+            gap: 16px;
+            will-change: transform;
+            transition: transform 0.3s ease;
+        }
+
+        .endorsements-card {
+            flex: 0 0 calc((100% - 32px) / 3);
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: #fff;
+            padding: 16px;
+            min-height: 298px;
+        }
+
+        .endorsements-profile {
+            display: grid;
+            grid-template-columns: 64px minmax(0, 1fr);
+            align-items: start;
+            column-gap: 12px;
+            margin-bottom: 12px;
+            padding-top: 12px;
+            min-width: 0;
+            min-height: 96px;
+        }
+
+        .endorsements-profile > div {
+            min-width: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            min-height: 64px;
+        }
+
+        .endorsements-avatar {
+            width: 64px;
+            height: 64px;
+            border-radius: 999px;
+            object-fit: cover;
+            object-position: center;
+            flex-shrink: 0;
+            align-self: start;
+            border: 1px solid #d8dde5;
+            display: block;
+        }
+
+        .endorsements-name {
+            margin: 0;
+            font-size: 20px;
+            line-height: 1.1;
+            font-weight: 600;
+            color: #2c2d30;
+        }
+
+        .endorsements-role {
+            margin: 4px 0 0;
+            font-size: 14px;
+            line-height: 1.3;
+            color: #2c2d30;
+        }
+
+        .endorsements-copy {
+            margin: 8px 0 0;
+            font-size: 16px;
+            line-height: 1.7;
+            font-style: italic;
+            color: #2c2d30;
+        }
+
+        @media (max-width: 980px) {
+            .endorsements-section {
+                padding: 20px 12px 16px;
+            }
+
+            .endorsements-controls {
+                display: none;
+            }
+
+            .endorsements-track {
+                transition: none;
+                transform: none !important;
+            }
+
+            .endorsements-card {
+                flex-basis: 100%;
+            }
+
+            .endorsements-title {
+                font-size: 30px;
+            }
+
+            .endorsements-name {
+                font-size: 22px;
+            }
+        }
+
+        .profile-suffixes {
+            display: inline;
+            line-height: 1.5;
+        }
+
+        .glossary-tooltip-wrapper {
+            position: relative;
+            display: inline;
+        }
+
+        .glossary-tooltip-link {
+            appearance: none;
+            background: transparent;
+            border: 0;
+            color: inherit;
+            cursor: pointer;
+            display: inline;
+            font: inherit;
+            line-height: inherit;
+            padding: 0;
+            text-align: left;
+            text-decoration-line: underline;
+            text-decoration-style: dashed;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 1px;
+        }
+
+        .glossary-tooltip-link:hover {
+            color: #1f4f84;
+            text-decoration-color: #1f4f84;
+        }
+
+        .tooltip-container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(52, 63, 83, 0.2);
+            color: #2c2d30;
+            display: none;
+            font-family: "Proxima Nova", "Open Sans", "Helvetica Neue", Arial, sans-serif;
+            font-size: 16px;
+            line-height: 24px;
+            margin: 0 auto;
+            outline: none;
+            padding: 20px 30px;
+            position: absolute;
+            top: calc(100% + 10px);
+            left: 0;
+            width: 320px;
+            max-width: min(320px, calc(100vw - 32px));
+            white-space: normal;
+            overflow-wrap: break-word;
+            z-index: 100;
+        }
+
+        .profile-suffixes .glossary-tooltip-wrapper .tooltip-container {
+            left: auto;
+            right: 0;
+        }
+
+        .tooltip-container.is-open {
+            display: block;
+        }
+
+        .tooltip-close-button {
+            background: transparent;
+            border: 0;
+            color: #2c2d30;
+            cursor: pointer;
+            padding: 0;
+            position: absolute;
+            right: 14px;
+            top: 12px;
+            width: 17px;
+            height: 17px;
+        }
+
+        .tooltip-close-button svg {
+            display: block;
+            width: 17px;
+            height: 17px;
+            fill: currentColor;
+        }
+
+        .tooltip-header {
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 24px;
+            margin: 0 24px 10px 0;
+        }
+
+        .tooltip-body {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+
+        .modal-backdrop {
+            position: fixed;
+            inset: 0;
+            z-index: 10002;
+            background-color: rgba(44, 45, 48, 0.3);
+            padding: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-backdrop[hidden] {
+            display: none;
+        }
+
+        .modal-backdrop_container {
+            background-color: #fff;
+            border-radius: 8px;
+            color: #2c2d30;
+            font-family: "Proxima Nova", "Open Sans", "Helvetica Neue", Arial, sans-serif;
+            max-width: 800px;
+            width: 100%;
+            max-height: calc(100vh - 32px);
+            overflow: auto;
+            position: relative;
+        }
+
+        .modal-header {
+            border-bottom: 1px solid #ddd;
+            padding: 18px 24px;
+            font-size: 28px;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 14px;
+            right: 14px;
+            width: 32px;
+            height: 32px;
+            border: 0;
+            background: transparent;
+            color: #2c2d30;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 24px;
+            line-height: 1;
+        }
+
+        .modal-close:hover {
+            background: #f2f4f7;
+        }
+
+        .email-form-content {
+            padding: 24px;
+            font-family: "Proxima Nova", "Open Sans", "Helvetica Neue", Arial, sans-serif;
+        }
+
+        .email-form_body-row {
+            display: flex;
+            gap: 24px;
+            align-items: flex-start;
+        }
+
+        .email-form_body-col {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .email-form_body-col.helper-text {
+            max-width: 280px;
+            font-size: 16px;
+            line-height: 24px;
+            color: #2c2d30;
+        }
+
+        .email-form_body-col.helper-text p + p {
+            margin-top: 12px;
+        }
+
+        .form-control {
+            margin-bottom: 14px;
+        }
+
+        .form-control label {
+            display: block;
+            margin-bottom: 6px;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #2c2d30;
+        }
+
+        .form-control input,
+        .form-control textarea {
+            width: 100%;
+            border: 1px solid #cfd6de;
+            border-radius: 6px;
+            padding: 10px 12px;
+            font-size: 16px;
+            font-family: "Proxima Nova", "Open Sans", "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.4;
+            color: #2c2d30;
+            background: #fff;
+        }
+
+        .form-control textarea {
+            min-height: 132px;
+            resize: vertical;
+        }
+
+        .form-control input:focus,
+        .form-control textarea:focus {
+            outline: none;
+            border-color: #477be4;
+            box-shadow: 0 0 0 2px rgba(71, 123, 228, 0.12);
+        }
+
+        .tos-link {
+            color: #477be4;
+            text-decoration: none;
+        }
+
+        .tos-link:hover {
+            text-decoration: underline;
+        }
+
+        .email-form_cta {
+            margin-top: 16px;
+        }
+
+        .submit-btn {
+            align-items: center;
+            background-color: #477be4;
+            border: 1px solid #477be4;
+            border-radius: 6px;
+            color: #fff;
+            cursor: pointer;
+            display: inline-flex;
+            justify-content: center;
+            min-height: 44px;
+            padding: 10px 18px;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+
+        .submit-btn:hover {
+            background-color: #3e6cc8;
+            border-color: #3e6cc8;
+        }
+
+        .email-form_text.light {
+            margin-top: 20px;
+            color: #4b5868;
+            font-size: 13px;
+            line-height: 1.55;
+        }
+
+        .email-form_text.light p {
+            margin: 0;
+        }
+
+        .email-form_text.light p + p {
+            margin-top: 10px;
+        }
+
+        .email-form_text.light span {
+            display: block;
+            margin-top: 10px;
+        }
+
+        .share-form-footer {
+            border-top: 1px solid #ddd;
+            padding: 24px;
+            display: flex;
+            justify-content: stretch;
+            background: #fff;
+            border-radius: 0 0 8px 8px;
+        }
+
+        .share-form-footer .submit-btn {
+            width: 100%;
+            min-width: 0;
+        }
+
+        .floating-contact-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: var(--modal-scrollbar-compensation, 0px);
+            z-index: 10001;
+            display: flex;
+            justify-content: center;
+            transform: translateY(-100%);
+            transition: transform 0.35s ease;
+            pointer-events: none;
+        }
+
+        .floating-contact-bar.is-visible {
+            transform: translateY(0);
+            pointer-events: auto;
+        }
+
+        .floating-contact-bar_inner {
+            width: 100%;
+            max-width: 1110px;
+            margin: 0 auto;
+            padding: 14px;
+            background: #fff;
+            box-shadow: 0 4px 4px rgba(31, 41, 55, 0.08);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+
+        .floating-contact-bar_profile {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            min-width: 0;
+        }
+
+        .floating-contact-bar_photo {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 1px solid #d9dfe8;
+            flex-shrink: 0;
+        }
+
+        .floating-contact-bar_text {
+            min-width: 0;
+        }
+
+        .floating-contact-bar_name-row {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            min-width: 0;
+            margin-bottom: 3px;
+        }
+
+        .floating-contact-bar_name {
+            margin: 0;
+            font-size: 28px;
+            line-height: 1.12;
+            letter-spacing: 0;
+            color: #2c2d30;
+            white-space: nowrap;
+            overflow: visible;
+            text-overflow: clip;
+        }
+
+        .floating-contact-bar_subtitle {
+            margin: 0;
+            font-size: 14px;
+            line-height: 1.25;
+            color: #8a8d96;
+            background: transparent;
+            box-shadow: none;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .floating-contact-bar_actions {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            flex-shrink: 0;
+            color: #2c2d30;
+            font-size: 17px;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+
+        .floating-contact-bar_phone {
+            color: #2c2d30;
+            text-decoration: none;
+        }
+
+        .floating-contact-bar_phone:hover,
+        .floating-contact-bar_email:hover {
+            text-decoration: underline;
+        }
+
+        .floating-contact-bar_email {
+            background: transparent;
+            border: 0;
+            padding: 0;
+            color: #2c2d30;
+            font: inherit;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: underline;
+            text-underline-offset: 1px;
+        }
+
+        .floating-contact-bar_or {
+            color: #8a8d96;
+            font-weight: 400;
+        }
+
+        .floating-contact-bar_phone-icon {
+            width: 26px;
+            height: 26px;
+            flex-shrink: 0;
+        }
+
+        @media (max-width: 980px) {
+            .layout {
+                grid-template-columns: 1fr;
+            }
+
+            .page-top-background {
+                padding: 10px;
+            }
+
+            .sidebar {
+                position: static;
+            }
+        }
+
+        @media (max-width: 720px) {
+            .header-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .header-grid > div:last-child {
+                min-height: 0;
+                position: static;
+            }
+
+            .meta-consultation {
+                position: static;
+            }
+
+            .photo-wrap {
+                max-width: 280px;
+                height: 320px;
+            }
+
+            h1 {
+                max-width: none;
+                font-size: 32px;
+                line-height: 1;
+            }
+
+            .subtitle {
+                font-size: 13px;
+            }
+
+            .meta-row {
+                font-size: 13px;
+            }
+
+            .kv {
+                grid-template-columns: 1fr;
+            }
+
+            .qualifications-section h2 {
+                font-size: 20px;
+            }
+
+            .qualifications-layout {
+                grid-template-columns: 1fr;
+                gap: 18px;
+            }
+
+            .qualifications-quote {
+                margin-top: 0;
+            }
+
+            .qualifications-verified-card {
+                grid-template-columns: 36px minmax(0, 1fr);
+                gap: 12px;
+                padding: 12px;
+                max-width: 100%;
+            }
+
+            .qualifications-verified-seal {
+                width: 36px;
+                height: 36px;
+            }
+
+            .qualifications-verified-seal svg {
+                width: 24px;
+                height: 24px;
+            }
+
+            .qualifications-verified-license,
+            .qualifications-verified-name,
+            .qualifications-verified-role,
+            .qualifications-line,
+            .qualifications-group-title {
+                font-size: 15px;
+            }
+
+            .qualifications-year {
+                font-size: 13px;
+            }
+
+            .specialties-group-title {
+                font-size: 18px;
+            }
+
+            .specialties-group-icon,
+            .specialties-group-icon svg {
+                width: 24px;
+                height: 24px;
+            }
+
+            .specialties-list li {
+                font-size: 16px;
+            }
+
+            .specialties-list--columns {
+                grid-template-columns: 1fr;
+                column-gap: 0;
+            }
+
+            .specialties-layout {
+                grid-template-columns: 1fr;
+                gap: 18px;
+            }
+
+            .finance-layout {
+                grid-template-columns: 1fr;
+                gap: 18px;
+            }
+
+            .finance-heading {
+                font-size: 22px;
+            }
+
+            .finance-subheading,
+            .finance-copy,
+            .finance-insurance-list li {
+                font-size: 16px;
+            }
+
+            .finance-quote-copy {
+                font-size: 16px;
+            }
+
+            .finance-quote-name {
+                font-size: 16px;
+            }
+
+            .finance-quote-role {
+                font-size: 13px;
+            }
+
+            .finance-quote-cta {
+                font-size: 16px;
+            }
+
+            .email-form_body-row {
+                flex-direction: column;
+            }
+
+            .email-form_body-col.helper-text {
+                max-width: none;
+            }
+
+            .floating-contact-bar_inner {
+                padding: 10px 12px;
+            }
+
+            .floating-contact-bar_name {
+                font-size: 20px;
+            }
+
+            .floating-contact-bar_subtitle {
+                display: none;
+            }
+
+            .floating-contact-bar_actions {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="floating-contact-bar" id="floating-contact-bar" aria-hidden="true">
+        <div class="floating-contact-bar_inner">
+            <div class="floating-contact-bar_profile">
+                <img class="floating-contact-bar_photo" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Crect width='120' height='120' fill='%23EEF3FB'/%3E%3Ccircle cx='60' cy='44' r='18' fill='none' stroke='%23477BE4' stroke-width='6'/%3E%3Cpath d='M26 96c4-18 18-28 34-28s30 10 34 28' fill='none' stroke='%23477BE4' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E" alt="Photo of Peggi McCue">
+                <div class="floating-contact-bar_text">
+                    <div class="floating-contact-bar_name-row">
+                        <h2 class="floating-contact-bar_name">Peggi McCue</h2>
+                        <span class="cool-verified" aria-hidden="true">
+                            <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.249 7.263 14 6.015V4.25A1.75 1.75 0 0 0 12.25 2.5h-1.765L9.237 1.25a1.75 1.75 0 0 0-2.474 0L5.515 2.5H3.75A1.75 1.75 0 0 0 2 4.25v1.765L.751 7.263a1.75 1.75 0 0 0 0 2.474L2 10.985v1.765A1.75 1.75 0 0 0 3.75 14.5h1.765l1.248 1.249a1.75 1.75 0 0 0 2.474 0l1.248-1.248h1.765A1.75 1.75 0 0 0 14 12.751v-1.765l1.249-1.25a1.75 1.75 0 0 0 0-2.473Zm-3.784-.8-3.923 5a.75.75 0 0 1-.564.287h-.026a.75.75 0 0 1-.557-.247L4.568 9.48a.75.75 0 1 1 1.114-1.006l1.23 1.362 3.374-4.3a.75.75 0 1 1 1.179.927Z"></path>
+                            </svg>
+                        </span>
+                    </div>
+                    <p class="floating-contact-bar_subtitle">Licensed Independent Mental Health Practitioner, LIMHP, LADC</p>
+                </div>
+            </div>
+            <div class="floating-contact-bar_actions">
+                <svg class="floating-contact-bar_phone-icon" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <rect width="32" height="32" y="0.5" fill="#ECF1FB" rx="16"></rect>
+                    <g clip-path="url(#floating-phone-icon_clip)">
+                        <path stroke="#477BE4" stroke-linecap="round" stroke-linejoin="round" d="m18.514 18.264-1.222 1.528a12.9 12.9 0 0 1-4.584-4.584l1.528-1.222a1.04 1.04 0 0 0 .3-1.232l-1.393-3.137a1.04 1.04 0 0 0-1.21-.583l-2.652.687a1.046 1.046 0 0 0-.771 1.154A15.406 15.406 0 0 0 21.625 23.99a1.044 1.044 0 0 0 1.153-.771l.688-2.651a1.04 1.04 0 0 0-.583-1.21l-3.137-1.393a1.04 1.04 0 0 0-1.232.299"></path>
+                    </g>
+                    <defs>
+                        <clipPath id="floating-phone-icon_clip">
+                            <path fill="#fff" d="M8 8.5h16v16H8z"></path>
+                        </clipPath>
+                    </defs>
+                </svg>
+                <a class="floating-contact-bar_phone" href="tel:+14028413722">(402) 841-3722</a>
+                <span class="floating-contact-bar_or">or</span>
+                <button class="floating-contact-bar_email" type="button" data-open-email-modal>Email</button>
+            </div>
+        </div>
+    </div>
+    <section class="site-intro-header" aria-label="Primary service focus" data-edit-id="site-intro-header">
+        <div class="site-intro-header-inner">
+            <h2>Individual Psychotherapy, Mental Health Assessment, and Consultation</h2>
+        </div>
+    </section>
+    <main class="page">
+        <div class="layout page-top-background">
+            <article class="card main-card">
+                <header class="header-grid" data-edit-id="profile-header">
+                    <div class="photo-wrap">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Crect width='120' height='120' fill='%23EEF3FB'/%3E%3Ccircle cx='60' cy='44' r='18' fill='none' stroke='%23477BE4' stroke-width='6'/%3E%3Cpath d='M26 96c4-18 18-28 34-28s30 10 34 28' fill='none' stroke='%23477BE4' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E" alt="Peggi McCue headshot">
+                    </div>
+                    <div>
+                        <div class="profile-name-row">
+                            <h1>Peggi McCue</h1>
+                            <span class="cool-verified" aria-label="Verified profile" title="Verified profile">
+                                <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M15.249 7.263 14 6.015V4.25A1.75 1.75 0 0 0 12.25 2.5h-1.765L9.237 1.25a1.75 1.75 0 0 0-2.474 0L5.515 2.5H3.75A1.75 1.75 0 0 0 2 4.25v1.765L.751 7.263a1.75 1.75 0 0 0 0 2.474L2 10.985v1.765A1.75 1.75 0 0 0 3.75 14.5h1.765l1.248 1.249a1.75 1.75 0 0 0 2.474 0l1.248-1.248h1.765A1.75 1.75 0 0 0 14 12.751v-1.765l1.249-1.25a1.75 1.75 0 0 0 0-2.473Zm-3.784-.8-3.923 5a.75.75 0 0 1-.564.287h-.026a.75.75 0 0 1-.557-.247L4.568 9.48a.75.75 0 1 1 1.114-1.006l1.23 1.362 3.374-4.3a.75.75 0 1 1 1.179.927Z"></path>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="subtitle">
+                            <span class="glossary-tooltip-wrapper">
+                                <button class="glossary-tooltip-link" type="button" aria-expanded="false" aria-controls="licensed-independent-tooltip">Licensed Independent Mental Health Practitioner</button>
+                                <div id="licensed-independent-tooltip" class="tooltip-container" role="dialog" aria-label="Licensed independent definition" tabindex="-1">
+                                    <button class="tooltip-close-button" type="button" aria-label="Close tooltip">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" aria-hidden="true">
+                                            <path fill-rule="evenodd" d="M16.08 2.467 14.43.812 8.15 7.11 1.872.812.221 2.467 6.5 8.766.22 15.064l1.65 1.656 6.28-6.3 6.279 6.3 1.65-1.656L9.8 8.766z"></path>
+                                        </svg>
+                                    </button>
+                                    <div class="tooltip-header">Licensed Independent Mental Health Practitioner</div>
+                                    <div class="tooltip-body">
+                                        Licensed independent means the clinician is permitted to practice autonomously under state law, including assessment, diagnosis, treatment planning, and psychotherapy without ongoing supervision.
+                                    </div>
+                                </div>
+                            </span>,
+                            <span class="profile-suffixes">
+                                <span class="glossary-tooltip-wrapper">
+                                    <button class="glossary-tooltip-link" type="button" aria-expanded="false" aria-controls="limhp-tooltip">LIMHP</button>,
+                                    <div id="limhp-tooltip" class="tooltip-container" role="dialog" aria-label="LIMHP definition" tabindex="-1">
+                                        <button class="tooltip-close-button" type="button" aria-label="Close tooltip">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M16.08 2.467 14.43.812 8.15 7.11 1.872.812.221 2.467 6.5 8.766.22 15.064l1.65 1.656 6.28-6.3 6.279 6.3 1.65-1.656L9.8 8.766z"></path>
+                                            </svg>
+                                        </button>
+                                        <div class="tooltip-header">Licensed Independent Mental Health Practitioner</div>
+                                        <div class="tooltip-body">
+                                            A LIMHP is a licensed clinician qualified to assess, diagnose, and treat mental health conditions, and to provide ongoing psychotherapy and counseling services.
+                                        </div>
+                                    </div>
+                                </span>
+                                <span class="glossary-tooltip-wrapper">
+                                    <button class="glossary-tooltip-link" type="button" aria-expanded="false" aria-controls="ladc-tooltip">LADC</button>
+                                    <div id="ladc-tooltip" class="tooltip-container" role="dialog" aria-label="LADC definition" tabindex="-1">
+                                        <button class="tooltip-close-button" type="button" aria-label="Close tooltip">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M16.08 2.467 14.43.812 8.15 7.11 1.872.812.221 2.467 6.5 8.766.22 15.064l1.65 1.656 6.28-6.3 6.279 6.3 1.65-1.656L9.8 8.766z"></path>
+                                            </svg>
+                                        </button>
+                                        <div class="tooltip-header">LADC</div>
+                                        <div class="tooltip-body">
+                                            LADC stands for Licensed Alcohol and Drug Counselor, a credential for clinicians trained to evaluate and treat substance use disorders through counseling, recovery planning, and relapse-prevention support.
+                                        </div>
+                                    </div>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="meta-row">
+                            <span class="badge">Licensed in the State of Nebraska</span>
+                            <span class="meta-location">Arlington, NE 68002</span>
+                            <span class="meta-consultation">Free 15 minute consultation available</span>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="profile-intro-block">
+                    <p class="intro">
+                        With many years of experience in mental health and addiction services, I provide compassionate, client-centered counseling for individuals, couples, and families. My work focuses on supporting those facing depression, anxiety, trauma, and substance abuse, helping clients navigate challenges and create meaningful, lasting change.
+                    </p>
+                    <div class="intro-image-placeholders" aria-label="Image placeholders">
+                        <div class="intro-image-placeholder" aria-hidden="true"></div>
+                        <div class="intro-image-placeholder" aria-hidden="true"></div>
+                        <div class="intro-image-placeholder" aria-hidden="true"></div>
+                    </div>
+                    <p class="intro-image-note">Placeholder can be used for office or additional images - can be removed.</p>
+                    <p class="intro">
+                        I take a strengths-based approach, recognizing and building upon each client's unique abilities and resilience. I also conduct comprehensive substance abuse evaluations, offering thoughtful, personalized insights to guide treatment and recovery. My goal is to create a safe, supportive environment where clients feel heard, empowered, and equipped to move forward.
+                    </p>
+                    <p class="intro-pending">
+                        I help you explore fresh perspectives so stress feels less overwhelming and life feels more open. Over time, the goal is for you to feel fully like yourself beyond the therapy room. Message me or visit my website to set up a consultation.
+                    </p>
+                    <div class="consultation-prompt">
+                        Call or <a class="consultation-prompt-link" href="mailto:contact@peggimccue.com">email</a> Peggi McCue now for a <strong>free 15 minute consultation</strong> - <a class="consultation-prompt-link" href="tel:+14028413722">(402) 841-3722</a>
+                    </div>
+                </div>
+            </article>
+
+            <aside class="sidebar">
+                <section class="connect">
+                    <div class="lets-connect-info">
+                        <div class="lets-connect-content">
+                            <span class="lets-connect-title">Connect for Appointment or Consultation</span>
+                            <a class="lets-connect-phone-number" href="tel:+14028413722">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" fill="none" class="lets-connect-phone-icon" viewBox="0 0 32 33" aria-hidden="true">
+                                    <rect width="32" height="32" y="0.5" fill="#ECF1FB" rx="16"></rect>
+                                    <g clip-path="url(#blue-phone-icon_svg__a)">
+                                        <path stroke="#477BE4" stroke-linecap="round" stroke-linejoin="round" d="m18.514 18.264-1.222 1.528a12.9 12.9 0 0 1-4.584-4.584l1.528-1.222a1.04 1.04 0 0 0 .3-1.232l-1.393-3.137a1.04 1.04 0 0 0-1.21-.583l-2.652.687a1.046 1.046 0 0 0-.771 1.154A15.406 15.406 0 0 0 21.625 23.99a1.044 1.044 0 0 0 1.153-.771l.688-2.651a1.04 1.04 0 0 0-.583-1.21l-3.137-1.393a1.04 1.04 0 0 0-1.232.299"></path>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="blue-phone-icon_svg__a">
+                                            <path fill="#fff" d="M8 8.5h16v16H8z"></path>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <span>(402) 841-3722</span>
+                            </a>
+                        </div>
+                        <img class="lets-connect-image" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Crect width='120' height='120' fill='%23EEF3FB'/%3E%3Ccircle cx='60' cy='44' r='18' fill='none' stroke='%23477BE4' stroke-width='6'/%3E%3Cpath d='M26 96c4-18 18-28 34-28s30 10 34 28' fill='none' stroke='%23477BE4' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E" alt="Photo of Peggi McCue, Clinical Social Work/Therapist, MSW, LIMHP">
+                    </div>
+                    <div class="lets-connect-email-button">
+                        <!-- Temporary contact email. Replace with final practice email when available. -->
+                        <button class="lets-connect-contact-button-email" type="button" title="Send email to Peggi McCue" data-open-email-modal>Email me</button>
+                    </div>
+                </section>
+
+                <section class="at-a-glance">
+                    <div class="sections-container">
+                        <div class="section">
+                            <h2 class="at-a-glance_heading">My Practice and Approach</h2>
+                            <div class="at-a-glance_row--appointments-all wide-icon at-a-glance_row at-a-glance_row_appointments">
+                                <span class="row-symbol" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="4" y="5" width="16" height="15" rx="2" stroke-width="1.5"/>
+                                        <path d="M8 3.5V7" stroke-width="1.5" stroke-linecap="round"/>
+                                        <path d="M16 3.5V7" stroke-width="1.5" stroke-linecap="round"/>
+                                        <path d="M4 9.5H20" stroke-width="1.5" stroke-linecap="round"/>
+                                    </svg>
+                                </span>
+                                <div>Available both in-person and by phone</div>
+                            </div>
+                            <div class="at-a-glance_row at-a-glance_row_appointments at-a-glance_row_service-area">
+                                <span class="row-symbol" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="6.75" stroke-width="1.7"/>
+                                        <path d="M5.25 12H18.75" stroke-width="1.7" stroke-linecap="round"/>
+                                        <path d="M12 5.25C10.4 7 9.5 9.4 9.5 12C9.5 14.6 10.4 17 12 18.75" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M12 5.25C13.6 7 14.5 9.4 14.5 12C14.5 14.6 13.6 17 12 18.75" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                                <div>Arlington is approximately a 40-minute drive northwest of Omaha.</div>
+                            </div>
+                        </div>
+                        <div class="section">
+                            <div class="at-a-glance_row--loc at-a-glance_row small-icon">
+                                <span class="row-symbol" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 21C15.5 16.7 18 14 18 10.5C18 7 15.31 4 12 4C8.69 4 6 7 6 10.5C6 14 8.5 16.7 12 21Z" stroke-width="1.5"/>
+                                        <circle cx="12" cy="10" r="2.4" stroke-width="1.5"/>
+                                    </svg>
+                                </span>
+                                <div class="address">
+                                    <p class="address-line address-line--struck">1045 Ash Drive</p>
+                                    <p class="address-line"><span>Arlington, NE 68002</span> <a class="address-line-map-link" href="https://maps.google.com/?q=Arlington,+NE+68002" target="_blank" rel="noopener noreferrer">map</a></p>
+                                    <a class="address-line phone" href="tel:+14028413722">(402) 841-3722</a>
+                                </div>
+                            </div>
+                            <div class="controls">
+                                <button class="contact-buttons" type="button" title="Send email to Peggi McCue" data-open-email-modal>Email me</button>
+                                <!-- Temporary website link. Replace with final website URL when available. -->
+                                <a class="contact-buttons" target="_blank" rel="nofollow noopener noreferrer" href="https://www.google.com">My website</a>
+                                <button class="contact-buttons" type="button" title="Share Peggi McCue's Profile" data-open-share-modal>Share</button>
+                            </div>
+                        </div>
+                        <div class="section">
+                            <div class="at-a-glance_row at-a-glance_row--availability">
+                                <span class="availability-quote-icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.2 6.2c-2.3.4-4.3 2.2-4.7 4.6h2.3c1.2 0 2.2 1 2.2 2.2v2.5c0 1.2-1 2.2-2.2 2.2H5.2C4 17.7 3 16.7 3 15.5v-1.7c0-4.4 3.1-7.9 7.2-8.4v.8Zm10.8 0c-2.3.4-4.3 2.2-4.7 4.6h2.3c1.2 0 2.2 1 2.2 2.2v2.5c0 1.2-1 2.2-2.2 2.2h-2.6c-1.2 0-2.2-1-2.2-2.2v-1.7c0-4.4 3.1-7.9 7.2-8.4v.8Z"/>
+                                    </svg>
+                                </span>
+                                <span class="availability-copy">Thoughtful, holistic therapy for clients across the Omaha area and the greater state of Nebraska, with practical support for anxiety, stress, pain, and burnout.</span>
+                                <span class="availability-quote-icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.8 17.8c2.3-.4 4.3-2.2 4.7-4.6h-2.3c-1.2 0-2.2-1-2.2-2.2V8.5c0-1.2 1-2.2 2.2-2.2h2.6c1.2 0 2.2 1 2.2 2.2v1.7c0 4.4-3.1 7.9-7.2 8.4v-.8Zm-10.8 0c2.3-.4 4.3-2.2 4.7-4.6H5.4c-1.2 0-2.2-1-2.2-2.2V8.5c0-1.2 1-2.2 2.2-2.2H8c1.2 0 2.2 1 2.2 2.2v1.7c0 4.4-3.1 7.9-7.2 8.4v-.8Z"/>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="section">
+                            <div class="at-a-glance-feature-list">
+                                <div class="at-a-glance_row at-a-glance_row--feature">
+                                    <span class="row-symbol" aria-hidden="true">
+                                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="12" cy="12" r="7" stroke-width="1.5"/>
+                                            <circle cx="12" cy="12" r="2.2" stroke-width="1.5"/>
+                                        </svg>
+                                    </span>
+                                    <div class="feature-scroll-link feature-scroll-link--specialties" role="button" tabindex="0" data-scroll-to-specialties aria-label="Jump to Specialties and Expertise section">
+                                        <span>I specialize in Stress, Anxiety, and Life</span>
+                                        <span class="feature-scroll-chevron" aria-hidden="true">
+                                            <svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 4.5L6 8.5L10 4.5" />
+                                            </svg>
+                                        </span>
+                                        <span>Transitions</span>
+                                    </div>
+                                </div>
+                                <div class="at-a-glance_row at-a-glance_row--feature">
+                                    <span class="row-symbol" aria-hidden="true">
+                                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 4.5 6 7v4.2c0 3.3 2.2 6.3 6 8.3 3.8-2 6-5 6-8.3V7L12 4.5Z" stroke-width="1.5" stroke-linejoin="round"/>
+                                            <path d="m9.3 12.2 1.9 1.9 3.5-3.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                    <div class="feature-scroll-link" role="button" tabindex="0" data-scroll-to-finances aria-label="Jump to Finances section">
+                                        <span>I accept insurance</span>
+                                        <span class="feature-scroll-chevron" aria-hidden="true">
+                                            <svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 4.5L6 8.5L10 4.5" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="at-a-glance_row at-a-glance_row--feature">
+                                    <span class="row-symbol" aria-hidden="true">
+                                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="9" cy="10" r="2.3" stroke-width="1.5"/>
+                                            <circle cx="15.2" cy="10.6" r="1.9" stroke-width="1.5"/>
+                                            <path d="M4.8 17c.7-2.4 2.3-3.8 4.2-3.8s3.5 1.4 4.2 3.8" stroke-width="1.5" stroke-linecap="round"/>
+                                            <path d="M13 17c.5-1.8 1.7-2.9 3.1-2.9s2.6 1.1 3.1 2.9" stroke-width="1.5" stroke-linecap="round"/>
+                                        </svg>
+                                    </span>
+                                    <div class="feature-scroll-link" role="button" tabindex="0" data-scroll-to-client-focus aria-label="Jump to Client Focus section">
+                                        <span>I see individuals and couples</span>
+                                        <span class="feature-scroll-chevron" aria-hidden="true">
+                                            <svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 4.5L6 8.5L10 4.5" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section at-a-glance-lower-section">
+                            <div class="at-a-glance-lower-details">
+                                <div class="location-video-row">
+                                    <p class="location-video-quote">&quot;Together, we can understand old patterns and build healthier ways forward.&quot;</p>
+                                    <div class="location-video-thumb" aria-label="Temporary video thumbnail placeholder" role="img"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </aside>
+        </div>
+
+        <article class="details-breakout">
+            <section class="section" data-edit-id="specialties-section">
+                <h2 id="specialties-heading">Specialties and Expertise</h2>
+                <div class="specialties-layout">
+                    <div class="specialties-groups" aria-label="Specialties and expertise lists">
+                        <div class="specialties-group">
+                            <h3 class="specialties-group-title">
+                                <span class="specialties-group-icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7 5.5h7.8l4.7 4.7V18a1.5 1.5 0 0 1-1.5 1.5H7A1.5 1.5 0 0 1 5.5 18V7A1.5 1.5 0 0 1 7 5.5Z"/>
+                                        <path d="M14.8 5.5V10h4.7"/>
+                                        <path d="M9 13.4h6"/>
+                                        <path d="M9 16h4.2"/>
+                                    </svg>
+                                </span>
+                                <span>Top Specialties</span>
+                            </h3>
+                            <ul class="specialties-list pending-approval-list">
+                                <li>Stress</li>
+                                <li>Anxiety</li>
+                                <li>Life Transitions</li>
+                            </ul>
+                        </div>
+
+                        <div class="specialties-group">
+                            <h3 class="specialties-group-title">
+                                <span class="specialties-group-icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7 5.5h7.8l4.7 4.7V18a1.5 1.5 0 0 1-1.5 1.5H7A1.5 1.5 0 0 1 5.5 18V7A1.5 1.5 0 0 1 7 5.5Z"/>
+                                        <path d="M14.8 5.5V10h4.7"/>
+                                        <path d="M9 13.4h6"/>
+                                        <path d="M9 16h4.2"/>
+                                    </svg>
+                                </span>
+                                <span>Expertise</span>
+                            </h3>
+                            <ul class="specialties-list specialties-list--columns pending-approval-list">
+                                <li>Burnout</li>
+                                <li>Coping Skills</li>
+                                <li>Depression</li>
+                                <li>Relationship Issues</li>
+                                <li>Sleep or Insomnia</li>
+                                <li>Self Esteem</li>
+                                <li>LGBTQ+</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <aside class="finance-quote" aria-label="Specialties quote card">
+                        <div class="finance-quote-copy-row">
+                            <span class="finance-quote-copy-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.2 6.2c-2.3.4-4.3 2.2-4.7 4.6h2.3c1.2 0 2.2 1 2.2 2.2v2.5c0 1.2-1 2.2-2.2 2.2H5.2C4 17.7 3 16.7 3 15.5v-1.7c0-4.4 3.1-7.9 7.2-8.4v.8Zm10.8 0c-2.3.4-4.3 2.2-4.7 4.6h2.3c1.2 0 2.2 1 2.2 2.2v2.5c0 1.2-1 2.2-2.2 2.2h-2.6c-1.2 0-2.2-1-2.2-2.2v-1.7c0-4.4 3.1-7.9 7.2-8.4v.8Z"></path>
+                                </svg>
+                            </span>
+                            <p class="specialties-quote-copy">I help clients facing stress, anxiety, and relationship strain build practical coping tools and create steadier, healthier day-to-day patterns.</p>
+                            <span class="finance-quote-copy-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.8 17.8c2.3-.4 4.3-2.2 4.7-4.6h-2.3c-1.2 0-2.2-1-2.2-2.2V8.5c0-1.2 1-2.2 2.2-2.2h2.6c1.2 0 2.2 1 2.2 2.2v1.7c0 4.4-3.1 7.9-7.2 8.4v-.8Zm-10.8 0c2.3-.4 4.3-2.2 4.7-4.6H5.4c-1.2 0-2.2-1-2.2-2.2V8.5c0-1.2 1-2.2 2.2-2.2H8c1.2 0 2.2 1 2.2 2.2v1.7c0 4.4-3.1 7.9-7.2 8.4v-.8Z"></path>
+                                </svg>
+                            </span>
+                        </div>
+
+                        <div class="finance-quote-profile">
+                            <img class="finance-quote-avatar" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Crect width='120' height='120' fill='%23EEF3FB'/%3E%3Ccircle cx='60' cy='44' r='18' fill='none' stroke='%23477BE4' stroke-width='6'/%3E%3Cpath d='M26 96c4-18 18-28 34-28s30 10 34 28' fill='none' stroke='%23477BE4' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E" alt="Photo of Peggi McCue">
+                            <div>
+                                <p class="finance-quote-name">Peggi McCue</p>
+                                <p class="finance-quote-role">Licensed Independent Mental Health Practitioner, LIMHP, LADC</p>
+                            </div>
+                        </div>
+
+                        <hr class="finance-quote-divider">
+
+                        <p class="finance-quote-cta">Call or <a href="mailto:contact@peggimccue.com">Email me</a> for a free 15 minute consultation now - <strong>(402) 841-3722</strong></p>
+                    </aside>
+                </div>
+            </section>
+
+            <section id="finances-section" class="section finance-section" data-edit-id="finances-section">
+                <div class="finance-layout">
+                    <div>
+                        <h2 class="finance-heading">Finances</h2>
+
+                        <div class="finance-subsection">
+                            <h3 class="finance-subheading">
+                                <span class="finance-subheading-icon finance-subheading-icon--card" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="2.5" y="5" width="19" height="14" rx="2.2" stroke-width="1.7"/>
+                                        <path d="M2.5 9.2H21.5" stroke-width="1.7" stroke-linecap="round"/>
+                                        <rect x="5.5" y="12.1" width="4.1" height="2.7" rx="0.65" stroke-width="1.4"/>
+                                        <path d="M11.8 13.45H16.8" stroke-width="1.4" stroke-linecap="round"/>
+                                        <path d="M11.8 15.5H18.2" stroke-width="1.4" stroke-linecap="round"/>
+                                    </svg>
+                                </span>
+                                <span>Payment Methods</span>
+                            </h3>
+                            <p class="finance-copy finance-copy--pending">American Express, Cash, Check, Discover, Mastercard, Visa</p>
+                        </div>
+
+                        <div class="finance-subsection">
+                            <h3 class="finance-subheading">
+                                <span class="finance-subheading-icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 3.5 19 6.4V11.8C19 15.6 16.2 19.2 12 20.5C7.8 19.2 5 15.6 5 11.8V6.4L12 3.5Z" stroke-width="1.7" stroke-linejoin="round"/>
+                                        <path d="M12 8V15" stroke-width="1.7" stroke-linecap="round"/>
+                                        <path d="M8.5 11.5H15.5" stroke-width="1.7" stroke-linecap="round"/>
+                                    </svg>
+                                </span>
+                                <span>Insurance</span>
+                            </h3>
+                            <ul class="finance-insurance-list finance-insurance-list--pending" aria-label="Accepted insurance plans">
+                                <li>Aetna</li>
+                                <li>Midlands Choice</li>
+                                <li>Blue Cross</li>
+                                <li>MultiPlan</li>
+                                <li>Blue Shield</li>
+                                <li>Nebraska Medicine Employee</li>
+                                <li>BlueCross and BlueShield</li>
+                                <li>Out of Network</li>
+                                <li>First Choice Health | FCH</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <aside class="finance-quote" aria-label="Finances quote card">
+                        <div class="finance-quote-copy-row">
+                            <span class="finance-quote-copy-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.2 6.2c-2.3.4-4.3 2.2-4.7 4.6h2.3c1.2 0 2.2 1 2.2 2.2v2.5c0 1.2-1 2.2-2.2 2.2H5.2C4 17.7 3 16.7 3 15.5v-1.7c0-4.4 3.1-7.9 7.2-8.4v.8Zm10.8 0c-2.3.4-4.3 2.2-4.7 4.6h2.3c1.2 0 2.2 1 2.2 2.2v2.5c0 1.2-1 2.2-2.2 2.2h-2.6c-1.2 0-2.2-1-2.2-2.2v-1.7c0-4.4 3.1-7.9 7.2-8.4v.8Z"></path>
+                                </svg>
+                            </span>
+                            <p class="finance-quote-copy">Email me for current rates, insurance questions, and practical options to keep therapy affordable.</p>
+                            <span class="finance-quote-copy-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.8 17.8c2.3-.4 4.3-2.2 4.7-4.6h-2.3c-1.2 0-2.2-1-2.2-2.2V8.5c0-1.2 1-2.2 2.2-2.2h2.6c1.2 0 2.2 1 2.2 2.2v1.7c0 4.4-3.1 7.9-7.2 8.4v-.8Zm-10.8 0c2.3-.4 4.3-2.2 4.7-4.6H5.4c-1.2 0-2.2-1-2.2-2.2V8.5c0-1.2 1-2.2 2.2-2.2H8c1.2 0 2.2 1 2.2 2.2v1.7c0 4.4-3.1 7.9-7.2 8.4v-.8Z"></path>
+                                </svg>
+                            </span>
+                        </div>
+
+                        <div class="finance-quote-profile">
+                            <img class="finance-quote-avatar" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Crect width='120' height='120' fill='%23EEF3FB'/%3E%3Ccircle cx='60' cy='44' r='18' fill='none' stroke='%23477BE4' stroke-width='6'/%3E%3Cpath d='M26 96c4-18 18-28 34-28s30 10 34 28' fill='none' stroke='%23477BE4' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E" alt="Photo of Peggi McCue">
+                            <div>
+                                <p class="finance-quote-name">Peggi McCue</p>
+                                <p class="finance-quote-role">Licensed Independent Mental Health Practitioner, LIMHP, LADC</p>
+                            </div>
+                        </div>
+
+                        <hr class="finance-quote-divider">
+
+                        <p class="finance-quote-cta">Call or <a href="mailto:contact@peggimccue.com">Email me</a> for a free 15 minute consultation now - <strong>(402) 841-3722</strong></p>
+                    </aside>
+                </div>
+            </section>
+
+            <section class="section qualifications-section" data-edit-id="qualifications-section">
+                <h2>Qualifications</h2>
+                <div class="qualifications-layout">
+                    <div class="qualifications-main">
+                        <div class="qualifications-verified-card" aria-label="Verified credentials">
+                            <span class="qualifications-verified-seal cool-verified" aria-hidden="true">
+                                <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M15.249 7.263 14 6.015V4.25A1.75 1.75 0 0 0 12.25 2.5h-1.765L9.237 1.25a1.75 1.75 0 0 0-2.474 0L5.515 2.5H3.75A1.75 1.75 0 0 0 2 4.25v1.765L.751 7.263a1.75 1.75 0 0 0 0 2.474L2 10.985v1.765A1.75 1.75 0 0 0 3.75 14.5h1.765l1.248 1.249a1.75 1.75 0 0 0 2.474 0l1.248-1.248h1.765A1.75 1.75 0 0 0 14 12.751v-1.765l1.249-1.25a1.75 1.75 0 0 0 0-2.473Zm-3.784-.8-3.923 5a.75.75 0 0 1-.564.287h-.026a.75.75 0 0 1-.557-.247L4.568 9.48a.75.75 0 1 1 1.114-1.006l1.23 1.362 3.374-4.3a.75.75 0 1 1 1.179.927Z"></path>
+                                </svg>
+                            </span>
+                            <div class="qualifications-verified-content">
+                                <p class="qualifications-verified-license">Licensed by State of Nebraska / <span class="pending-approval">3411</span></p>
+                                <p class="qualifications-verified-name">Peggi McCue</p>
+                                <p class="qualifications-verified-role">Licensed Independent Mental Health Practitioner , LIMHP, LADC</p>
+                            </div>
+                        </div>
+
+                        <div class="qualifications-group">
+                            <h3 class="qualifications-group-title">
+                                <span class="qualifications-group-icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7 5.5h7.8l4.7 4.7V18a1.5 1.5 0 0 1-1.5 1.5H7A1.5 1.5 0 0 1 5.5 18V7A1.5 1.5 0 0 1 7 5.5Z"/>
+                                        <path d="M14.8 5.5V10h4.7"/>
+                                        <path d="M9 13.4h6"/>
+                                        <path d="M9 16h4.2"/>
+                                    </svg>
+                                </span>
+                                <span>Education and Years In Practice</span>
+                            </h3>
+                            <p class="qualifications-line pending-approval">In Practice for 13 years</p>
+                            <p class="qualifications-line pending-approval">Attended Tulane University, Master of Social Work, Graduated 2013</p>
+                        </div>
+
+                        <div class="qualifications-group">
+                            <h3 class="qualifications-group-title">
+                                <span class="qualifications-group-icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7 5.5h7.8l4.7 4.7V18a1.5 1.5 0 0 1-1.5 1.5H7A1.5 1.5 0 0 1 5.5 18V7A1.5 1.5 0 0 1 7 5.5Z"/>
+                                        <path d="M14.8 5.5V10h4.7"/>
+                                        <path d="M9 13.4h6"/>
+                                        <path d="M9 16h4.2"/>
+                                    </svg>
+                                </span>
+                                <span>Additional Credentials</span>
+                            </h3>
+                            <p class="qualifications-line pending-approval">Certificate from Drishti International-Certified Yoga Teacher</p>
+                            <p class="qualifications-year pending-approval">2016</p>
+                            <p class="qualifications-line pending-approval">Certificate from American Society of Clinical Hypnosis-Level 2 Completion</p>
+                        </div>
+                    </div>
+
+                    <aside class="finance-quote qualifications-quote" aria-label="Qualifications quote card">
+                        <div class="finance-quote-copy-row">
+                            <span class="finance-quote-copy-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.2 6.2c-2.3.4-4.3 2.2-4.7 4.6h2.3c1.2 0 2.2 1 2.2 2.2v2.5c0 1.2-1 2.2-2.2 2.2H5.2C4 17.7 3 16.7 3 15.5v-1.7c0-4.4 3.1-7.9 7.2-8.4v.8Zm10.8 0c-2.3.4-4.3 2.2-4.7 4.6h2.3c1.2 0 2.2 1 2.2 2.2v2.5c0 1.2-1 2.2-2.2 2.2h-2.6c-1.2 0-2.2-1-2.2-2.2v-1.7c0-4.4 3.1-7.9 7.2-8.4v.8Z"></path>
+                                </svg>
+                            </span>
+                            <p class="finance-quote-copy">For more than a decade, I have supported clients through stress, anxiety, pain, and health-related challenges. My approach blends trauma-informed, mind-body care with practical tools that help create meaningful progress beyond talk alone.</p>
+                            <span class="finance-quote-copy-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.8 17.8c2.3-.4 4.3-2.2 4.7-4.6h-2.3c-1.2 0-2.2-1-2.2-2.2V8.5c0-1.2 1-2.2 2.2-2.2h2.6c1.2 0 2.2 1 2.2 2.2v1.7c0 4.4-3.1 7.9-7.2 8.4v-.8Zm-10.8 0c2.3-.4 4.3-2.2 4.7-4.6H5.4c-1.2 0-2.2-1-2.2-2.2V8.5c0-1.2 1-2.2 2.2-2.2H8c1.2 0 2.2 1 2.2 2.2v1.7c0 4.4-3.1 7.9-7.2 8.4v-.8Z"></path>
+                                </svg>
+                            </span>
+                        </div>
+
+                        <div class="finance-quote-profile">
+                            <img class="finance-quote-avatar" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Crect width='120' height='120' fill='%23EEF3FB'/%3E%3Ccircle cx='60' cy='44' r='18' fill='none' stroke='%23477BE4' stroke-width='6'/%3E%3Cpath d='M26 96c4-18 18-28 34-28s30 10 34 28' fill='none' stroke='%23477BE4' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E" alt="Photo of Peggi McCue">
+                            <div>
+                                <p class="finance-quote-name">Peggi McCue</p>
+                                <p class="finance-quote-role">Licensed Independent Mental Health Practitioner, LIMHP, LADC</p>
+                            </div>
+                        </div>
+
+                        <hr class="finance-quote-divider">
+
+                        <p class="finance-quote-cta">Call or <a href="mailto:contact@peggimccue.com">Email me</a> for a free 15 minute consultation now - <strong>(402) 841-3722</strong></p>
+                    </aside>
+                </div>
+            </section>
+
+            <section class="section client-focus-section" id="client-focus-section" data-edit-id="client-focus-section">
+                <h2 class="client-focus-title">Client Focus</h2>
+                <div class="client-focus-container">
+                    <div class="client-focus-tile">
+                        <div class="client-focus-icon age-focus" aria-hidden="true"></div>
+                        <h3 class="client-focus-group-title">Age</h3>
+                        <div class="client-focus-item"><span class="client-focus-description pending-approval">Adults <span class="force-no-highlight">,&nbsp;</span></span></div>
+                        <div class="client-focus-item"><span class="client-focus-description pending-approval">Elders (65+)</span></div>
+                    </div>
+
+                    <div class="client-focus-tile">
+                        <div class="client-focus-icon modality" aria-hidden="true"></div>
+                        <h3 class="client-focus-group-title">Participants</h3>
+                        <div class="client-focus-item"><span class="client-focus-description pending-approval">Individuals <span class="force-no-highlight">,&nbsp;</span></span></div>
+                        <div class="client-focus-item"><span class="client-focus-description pending-approval">Couples</span></div>
+                    </div>
+
+                    <div class="client-focus-tile">
+                        <div class="client-focus-icon categories" aria-hidden="true"></div>
+                        <h3 class="client-focus-group-title">Communities</h3>
+                        <div class="client-focus-item"><span class="client-focus-description pending-approval">Bisexual Allied <span class="force-no-highlight">,&nbsp;</span></span></div>
+                        <div class="client-focus-item"><span class="client-focus-description pending-approval">Gay Allied <span class="force-no-highlight">,&nbsp;</span></span></div>
+                        <div class="client-focus-item"><span class="client-focus-description pending-approval">Lesbian Allied <span class="force-no-highlight">,&nbsp;</span></span></div>
+                        <div class="client-focus-item"><span class="client-focus-description pending-approval">Non-Binary Allied <span class="force-no-highlight">,&nbsp;</span></span></div>
+                        <div class="client-focus-item"><span class="client-focus-description pending-approval">Queer Allied <span class="force-no-highlight">,&nbsp;</span></span></div>
+                        <div class="client-focus-item"><span class="client-focus-description pending-approval">Racial Justice Allied <span class="force-no-highlight">,&nbsp;</span></span></div>
+                        <div class="client-focus-item"><span class="client-focus-description pending-approval">Transgender Allied</span></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section treatment-section" data-edit-id="treatment-section">
+                <div class="treatment-layout">
+                    <div>
+                        <h2 class="treatment-heading">Treatment Approach</h2>
+                        <h3 class="treatment-group-title">
+                            <span class="treatment-group-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 4.5h10a2 2 0 0 1 2 2V19l-4.2-2.8L8.6 19 5 16.6V4.5Z"/>
+                                    <path d="M8.2 8.4h5.6"/>
+                                    <path d="M8.2 11.2h4.1"/>
+                                </svg>
+                            </span>
+                            <span>Types of Therapy</span>
+                        </h3>
+
+                        <ul class="treatment-list pending-approval-list" aria-label="types of therapy">
+                            <li class="has-tooltip">Acceptance and Commitment (ACT)</li>
+                            <li class="has-tooltip">Hypnotherapy</li>
+                            <li class="has-tooltip">Attachment-based</li>
+                            <li class="has-tooltip">Integrative</li>
+                            <li class="has-tooltip">Cognitive Behavioral (CBT)</li>
+                            <li class="has-tooltip">Jungian</li>
+                            <li class="has-tooltip">Compassion Focused</li>
+                            <li class="has-tooltip">Mindfulness-Based (MBCT)</li>
+                            <li class="has-tooltip">Existential</li>
+                            <li class="has-tooltip">Psychodynamic</li>
+                            <li class="has-tooltip">Feminist</li>
+                            <li class="has-tooltip">Somatic</li>
+                            <li>Functional Family Therapy</li>
+                            <li>Yoga Integration</li>
+                        </ul>
+                    </div>
+
+                    <aside class="finance-quote treatment-quote" aria-label="Treatment approach quote card">
+                        <div class="finance-quote-copy-row">
+                            <span class="finance-quote-copy-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.2 6.2c-2.3.4-4.3 2.2-4.7 4.6h2.3c1.2 0 2.2 1 2.2 2.2v2.5c0 1.2-1 2.2-2.2 2.2H5.2C4 17.7 3 16.7 3 15.5v-1.7c0-4.4 3.1-7.9 7.2-8.4v.8Zm10.8 0c-2.3.4-4.3 2.2-4.7 4.6h2.3c1.2 0 2.2 1 2.2 2.2v2.5c0 1.2-1 2.2-2.2 2.2h-2.6c-1.2 0-2.2-1-2.2-2.2v-1.7c0-4.4 3.1-7.9 7.2-8.4v.8Z"></path>
+                                </svg>
+                            </span>
+                            <p class="finance-quote-copy">I believe therapy should tend to all parts of your experience. We might work with CBT to address unhelpful thoughts or patterns, mindfulness or yoga techniques to address stress, somatic approaches to increase comfort, or existential or Jungian concepts to address issues related to meaning or spirituality. Nature-based sessions (eco-therapy) are also available.</p>
+                            <span class="finance-quote-copy-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.8 17.8c2.3-.4 4.3-2.2 4.7-4.6h-2.3c-1.2 0-2.2-1-2.2-2.2V8.5c0-1.2 1-2.2 2.2-2.2h2.6c1.2 0 2.2 1 2.2 2.2v1.7c0 4.4-3.1 7.9-7.2 8.4v-.8Zm-10.8 0c2.3-.4 4.3-2.2 4.7-4.6H5.4c-1.2 0-2.2-1-2.2-2.2V8.5c0-1.2 1-2.2 2.2-2.2H8c1.2 0 2.2 1 2.2 2.2v1.7c0 4.4-3.1 7.9-7.2 8.4v-.8Z"></path>
+                                </svg>
+                            </span>
+                        </div>
+
+                        <div class="finance-quote-profile">
+                            <img class="finance-quote-avatar" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Crect width='120' height='120' fill='%23EEF3FB'/%3E%3Ccircle cx='60' cy='44' r='18' fill='none' stroke='%23477BE4' stroke-width='6'/%3E%3Cpath d='M26 96c4-18 18-28 34-28s30 10 34 28' fill='none' stroke='%23477BE4' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E" alt="Photo of Peggi McCue">
+                            <div>
+                                <p class="finance-quote-name">Peggi McCue</p>
+                                <p class="finance-quote-role">Licensed Independent Mental Health Practitioner, LIMHP, LADC</p>
+                            </div>
+                        </div>
+
+                        <hr class="finance-quote-divider">
+
+                        <p class="finance-quote-cta">Call or <a href="mailto:contact@peggimccue.com">Email me</a> for a free 15 minute consultation now - <strong>(402) 841-3722</strong></p>
+                    </aside>
+                </div>
+            </section>
+
+            <section class="section endorsements-section" id="endorsements-section" data-edit-id="endorsements-section">
+                <div class="endorsements-header">
+                    <h2 class="endorsements-title">4 Endorsements (pending endorsments - this section can be removed)</h2>
+                    <div class="endorsements-controls">
+                        <button class="endorsements-control endorsements-control--prev endorsements-control--disabled" type="button" aria-label="Previous endorsement" disabled>
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.5 5.5 8 12l6.5 6.5" />
+                            </svg>
+                        </button>
+                        <button class="endorsements-control endorsements-control--next" type="button" aria-label="Next endorsement">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.5 5.5 16 12l-6.5 6.5" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="endorsements-carousel">
+                    <div class="endorsements-track">
+                    <article class="endorsements-card" aria-label="Endorsement from Alicia Monroe">
+                        <div class="endorsements-profile">
+                            <img class="endorsements-avatar" src="https://randomuser.me/api/portraits/women/44.jpg" alt="Photo of Alicia Monroe">
+                            <div>
+                                <p class="endorsements-name">Alicia Monroe</p>
+                                <p class="endorsements-role">Psychologist, PhD, LP</p>
+                            </div>
+                        </div>
+                        <p class="endorsements-copy">I have consulted with Peggi on complex anxiety and trauma presentations, and she consistently leads with warmth, precision, and clinical depth. Her sessions are practical, grounded, and deeply respectful of each client's pace.</p>
+                    </article>
+
+                    <article class="endorsements-card" aria-label="Endorsement from Jordan Pike">
+                        <div class="endorsements-profile">
+                            <img class="endorsements-avatar" src="https://randomuser.me/api/portraits/men/32.jpg" alt="Photo of Jordan Pike">
+                            <div>
+                                <p class="endorsements-name">Jordan Pike</p>
+                                <p class="endorsements-role">Licensed Professional Counselor, LPC</p>
+                            </div>
+                        </div>
+                        <p class="endorsements-copy">Peggi brings a calm and intentional presence to therapy. She helps people connect the dots between stress patterns, nervous system responses, and meaningful goals, then translates insight into sustainable change outside the office.</p>
+                    </article>
+
+                    <article class="endorsements-card" aria-label="Endorsement from Priya Salazar">
+                        <div class="endorsements-profile">
+                            <img class="endorsements-avatar" src="https://randomuser.me/api/portraits/women/68.jpg" alt="Photo of Priya Salazar">
+                            <div>
+                                <p class="endorsements-name">Priya Salazar</p>
+                                <p class="endorsements-role">Clinical Social Worker/Therapist, MSW, LCSW</p>
+                            </div>
+                        </div>
+                        <p class="endorsements-copy">What stands out most about Peggi is how effectively she balances compassion with structure. Clients feel understood quickly, and they also leave with concrete tools for managing burnout, relational strain, and day-to-day overwhelm.</p>
+                    </article>
+
+                    <article class="endorsements-card" aria-label="Endorsement from Marcus Lee">
+                        <div class="endorsements-profile">
+                            <img class="endorsements-avatar" src="https://randomuser.me/api/portraits/men/54.jpg" alt="Photo of Marcus Lee">
+                            <div>
+                                <p class="endorsements-name">Marcus Lee</p>
+                                <p class="endorsements-role">Marriage &amp; Family Therapist Associate, PLMHP</p>
+                            </div>
+                        </div>
+                        <p class="endorsements-copy">Peggi's work is both compassionate and highly actionable. She helps clients feel grounded in session while building confidence to apply new coping skills in real life, especially during high-stress transitions.</p>
+                    </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section location-section" id="address-section" data-edit-id="location-section">
+                <h2 class="location-heading">Location</h2>
+                <div class="location-map" role="img" aria-label="Static map screenshot centered on Arlington, Nebraska" data-edit-id="location-map">
+                    <img class="location-map-image" src="Arlington_Map.PNG" alt="Map screenshot centered on Arlington, Nebraska">
+                </div>
+
+                <div class="location-bicolumn">
+                    <div class="location-primary">
+                        <div class="location-address-and-availability">
+                            <div class="location-address-section">
+                                <div class="location-address-tile">
+                                    <div class="location-address-title">
+                                        <h3 class="location-address-subheading">Primary Location</h3>
+                                        <div class="location-primary-pin" aria-hidden="true"></div>
+                                    </div>
+
+                                    <div class="location-address-lines">
+                                        <p class="location-address-line address-line address-line--struck">1045 Ash Drive</p>
+                                        <p class="location-address-line">Arlington, NE 68002</p>
+                                        <a class="location-address-phone" href="tel:+1-402-841-3722">(402) 841-3722</a>
+                                    </div>
+
+                                    <p class="location-link-wrapper"><button class="location-link" type="button" data-open-email-modal title="Send email to Peggi McCue">Email me</button></p>
+                                    <p class="location-link-wrapper">
+                                        <!-- TODO: Replace with final website URL once approved. -->
+                                        <span class="location-link location-link--pending">My website</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="location-nearby">
+                            <h3 class="location-nearby-title">Nearby Areas</h3>
+                            <div class="location-area-levels">
+                                <div class="location-area-level">
+                                    <h4 class="location-area-title">Cities</h4>
+                                    <ul class="location-area-list">
+                                        <li><a class="pending-approval" href="https://www.psychologytoday.com/us/therapists/ne/omaha" target="_blank" rel="noopener noreferrer">Omaha, NE</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="location-area-level">
+                                    <h4 class="location-area-title">Counties</h4>
+                                    <ul class="location-area-list">
+                                        <li><a class="pending-approval" href="https://www.psychologytoday.com/us/therapists/ne/douglas-county" target="_blank" rel="noopener noreferrer">Douglas</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="location-area-level">
+                                    <h4 class="location-area-title">Zips</h4>
+                                    <ul class="location-area-list">
+                                        <li><a class="pending-approval" href="https://www.psychologytoday.com/us/therapists/68104" target="_blank" rel="noopener noreferrer">68104</a></li>
+                                        <li><a class="pending-approval" href="https://www.psychologytoday.com/us/therapists/68106" target="_blank" rel="noopener noreferrer">68106</a></li>
+                                        <li><a class="pending-approval" href="https://www.psychologytoday.com/us/therapists/68144" target="_blank" rel="noopener noreferrer">68144</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="location-area-level">
+                                    <h4 class="location-area-title">Neighborhoods</h4>
+                                    <ul class="location-area-list">
+                                        <li><a class="pending-approval" href="https://www.psychologytoday.com/us/therapists/ne/omaha/aksarben-village" target="_blank" rel="noopener noreferrer">Aksarben Village</a></li>
+                                        <li><a class="pending-approval" href="https://www.psychologytoday.com/us/therapists/ne/omaha/benson" target="_blank" rel="noopener noreferrer">Benson</a></li>
+                                        <li><a class="pending-approval" href="https://www.psychologytoday.com/us/therapists/ne/omaha/elmwood-park" target="_blank" rel="noopener noreferrer">Elmwood Park</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <aside class="finance-quote location-quote" aria-label="Location quote card">
+                        <div class="finance-quote-copy-row">
+                            <span class="finance-quote-copy-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.2 6.2c-2.3.4-4.3 2.2-4.7 4.6h2.3c1.2 0 2.2 1 2.2 2.2v2.5c0 1.2-1 2.2-2.2 2.2H5.2C4 17.7 3 16.7 3 15.5v-1.7c0-4.4 3.1-7.9 7.2-8.4v.8Zm10.8 0c-2.3.4-4.3 2.2-4.7 4.6h2.3c1.2 0 2.2 1 2.2 2.2v2.5c0 1.2-1 2.2-2.2 2.2h-2.6c-1.2 0-2.2-1-2.2-2.2v-1.7c0-4.4 3.1-7.9 7.2-8.4v.8Z"></path>
+                                </svg>
+                            </span>
+                            <p class="finance-quote-copy">Holistic therapy services for individuals in Arlington, the Omaha area, and greater Nebraska. Offering approaches to address anxiety and strengthen coping with stress, pain, or burnout.</p>
+                            <span class="finance-quote-copy-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.8 17.8c2.3-.4 4.3-2.2 4.7-4.6h-2.3c-1.2 0-2.2-1-2.2-2.2V8.5c0-1.2 1-2.2 2.2-2.2h2.6c1.2 0 2.2 1 2.2 2.2v1.7c0 4.4-3.1 7.9-7.2 8.4v-.8Zm-10.8 0c2.3-.4 4.3-2.2 4.7-4.6H5.4c-1.2 0-2.2-1-2.2-2.2V8.5c0-1.2 1-2.2 2.2-2.2H8c1.2 0 2.2 1 2.2 2.2v1.7c0 4.4-3.1 7.9-7.2 8.4v-.8Z"></path>
+                                </svg>
+                            </span>
+                        </div>
+
+                        <div class="finance-quote-profile">
+                            <img class="finance-quote-avatar" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Crect width='120' height='120' fill='%23EEF3FB'/%3E%3Ccircle cx='60' cy='44' r='18' fill='none' stroke='%23477BE4' stroke-width='6'/%3E%3Cpath d='M26 96c4-18 18-28 34-28s30 10 34 28' fill='none' stroke='%23477BE4' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E" alt="Photo of Peggi McCue">
+                            <div>
+                                <p class="finance-quote-name">Peggi McCue</p>
+                                <p class="finance-quote-role">Licensed Independent Mental Health Practitioner, LIMHP, LADC</p>
+                            </div>
+                        </div>
+
+                        <hr class="finance-quote-divider">
+
+                        <p class="finance-quote-cta">Call for a free consultation now - <strong>(402) 841-3722</strong></p>
+                    </aside>
+                </div>
+            </section>
+
+            <hr class="ready-talk-divider" aria-hidden="true">
+
+            <section class="ready-talk-band" aria-labelledby="ready-talk-title" data-edit-id="ready-talk-band">
+                <div class="ready-talk-section">
+                    <h2 class="ready-talk-title" id="ready-talk-title">Ready to Talk?</h2>
+                    <p class="ready-talk-copy">Request an appointment to quickly set up a free 15 minute consultation. Email Peggi with any other questions.</p>
+                    <div class="ready-talk-actions">
+                        <button class="ready-talk-action ready-talk-action--primary" type="button" data-open-email-modal>Request Appointment</button>
+                        <button class="ready-talk-action ready-talk-action--secondary" type="button" data-open-email-modal>Email Peggi</button>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+    <div class="modal-backdrop" id="email-modal" hidden>
+        <div class="modal-backdrop_container" role="dialog" aria-modal="true" aria-labelledby="email-modal-title">
+            <div class="form-heading modal-header" id="email-modal-title">Email Peggi McCue</div>
+            <button class="modal-close" type="button" aria-label="Close email form" data-close-email-modal>&times;</button>
+            <div class="email-form-content">
+                <form id="email-contact-form">
+                    <div class="email-form_body-row">
+                        <div class="email-form_body-col">
+                            <div class="form-control">
+                                <label for="email-name">Your Name</label>
+                                <input id="email-name" type="text" maxlength="50" autocomplete="name">
+                            </div>
+                            <div class="form-control">
+                                <label for="email-address">Your Email Address</label>
+                                <input id="email-address" type="email" maxlength="80" autocomplete="email">
+                            </div>
+                            <div class="form-control">
+                                <label for="email-phone">Your Phone</label>
+                                <input id="email-phone" type="tel" maxlength="50" autocomplete="tel">
+                            </div>
+                            <div class="form-control">
+                                <label for="email-subject">Subject</label>
+                                <input id="email-subject" type="text" maxlength="80">
+                            </div>
+                            <div class="form-control">
+                                <label for="email-message">Message</label>
+                                <textarea id="email-message" rows="6"></textarea>
+                            </div>
+                            <div class="email-form_cta">
+                                <button class="submit-btn" type="submit">Send Email</button>
+                            </div>
+                        </div>
+                        <div class="email-form_body-col email-form_text helper-text">
+                            <p>Feel free to reach out. A few quick tips:</p>
+                            <p>1. Let us know what you are looking for (for example, an initial consult, fees, or availability).</p>
+                            <p>2. Share a brief overview of what is bringing you here.</p>
+                            <p>3. Tell us how you would like to be contacted (phone, text, or email).</p>
+                        </div>
+                    </div>
+                    <div class="email-form_text light">
+                        <p>Your message will be sent directly to the therapist via email, and a confirmation will be sent to you for your records. Email is not fully secure during transit, so please avoid sharing sensitive information such as medical or insurance details.</p>
+                        <p>If this is an emergency do not use this form. Call 911 or your nearest hospital.</p>
+                        <span>This site is protected by reCAPTCHA and the Google <a class="tos-link" target="_blank" rel="noopener noreferrer" href="https://policies.google.com/privacy">Privacy Policy</a> and <a class="tos-link" target="_blank" rel="noopener noreferrer" href="https://policies.google.com/terms">Terms of Service</a> apply.</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal-backdrop" id="share-modal" hidden>
+        <div class="modal-backdrop_container" role="dialog" aria-modal="true" aria-labelledby="share-modal-title">
+            <div class="form-heading modal-header" id="share-modal-title">Share Peggi McCue's Profile</div>
+            <button class="modal-close" type="button" aria-label="Close share form" data-close-share-modal>&times;</button>
+            <div class="email-form-content">
+                <form id="share-contact-form">
+                    <div class="form-control">
+                        <label for="share-your-name">Your Name</label>
+                        <input id="share-your-name" type="text" maxlength="50" autocomplete="name" required>
+                    </div>
+                    <div class="form-control">
+                        <label for="share-your-email">Your Email</label>
+                        <input id="share-your-email" type="email" maxlength="80" autocomplete="email" required>
+                    </div>
+                    <div class="form-control">
+                        <label for="share-friend-name">Friend's Name</label>
+                        <input id="share-friend-name" type="text" maxlength="50" autocomplete="name" required>
+                    </div>
+                    <div class="form-control">
+                        <label for="share-friend-email">Friend's Email</label>
+                        <input id="share-friend-email" type="email" maxlength="80" autocomplete="email" required>
+                    </div>
+                    <div class="form-control">
+                        <label for="share-message">Message</label>
+                        <textarea id="share-message" rows="6">I thought you might like this practitioner profile.</textarea>
+                    </div>
+                    <div class="email-form_text light">
+                        <p>This will open your default email app with practitioner details pre-filled for easy sharing.</p>
+                    </div>
+                </form>
+            </div>
+            <div class="share-form-footer">
+                <button class="submit-btn" type="submit" form="share-contact-form">Send Email</button>
+            </div>
+        </div>
+    </div>
+<script>
+    (function () {
+        const wrappers = Array.from(document.querySelectorAll('.glossary-tooltip-wrapper'));
+        if (!wrappers.length) {
+            return;
+        }
+
+        let activeTrigger = null;
+
+        const closeAllTooltips = () => {
+            wrappers.forEach((item) => {
+                const trigger = item.querySelector('.glossary-tooltip-link');
+                const tooltip = item.querySelector('.tooltip-container');
+                if (!trigger || !tooltip) {
+                    return;
+                }
+                tooltip.classList.remove('is-open');
+                trigger.setAttribute('aria-expanded', 'false');
+            });
+        };
+
+        wrappers.forEach((wrapper) => {
+            const trigger = wrapper.querySelector('.glossary-tooltip-link');
+            const tooltip = wrapper.querySelector('.tooltip-container');
+            const closeButton = wrapper.querySelector('.tooltip-close-button');
+
+            if (!trigger || !tooltip || !closeButton) {
+                return;
+            }
+
+            const openTooltip = () => {
+                closeAllTooltips();
+                tooltip.classList.add('is-open');
+                trigger.setAttribute('aria-expanded', 'true');
+                activeTrigger = trigger;
+                tooltip.focus();
+            };
+
+            trigger.addEventListener('click', (event) => {
+                event.stopPropagation();
+                if (tooltip.classList.contains('is-open')) {
+                    closeAllTooltips();
+                    activeTrigger = trigger;
+                    return;
+                }
+                openTooltip();
+            });
+
+            closeButton.addEventListener('click', (event) => {
+                event.stopPropagation();
+                closeAllTooltips();
+                activeTrigger = trigger;
+                trigger.focus();
+            });
+        });
+
+        document.addEventListener('click', (event) => {
+            if (!wrappers.some((wrapper) => wrapper.contains(event.target))) {
+                closeAllTooltips();
+            }
+        });
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') {
+                closeAllTooltips();
+                if (activeTrigger) {
+                    activeTrigger.focus();
+                }
+            }
+        });
+
+        const emailModal = document.getElementById('email-modal');
+        const openModalButtons = Array.from(document.querySelectorAll('[data-open-email-modal]'));
+        const closeModalButtons = Array.from(document.querySelectorAll('[data-close-email-modal]'));
+        const modalContainer = emailModal ? emailModal.querySelector('.modal-backdrop_container') : null;
+        const emailForm = document.getElementById('email-contact-form');
+        const shareModal = document.getElementById('share-modal');
+        const openShareButtons = Array.from(document.querySelectorAll('[data-open-share-modal]'));
+        const closeShareButtons = Array.from(document.querySelectorAll('[data-close-share-modal]'));
+        const shareModalContainer = shareModal ? shareModal.querySelector('.modal-backdrop_container') : null;
+        const shareForm = document.getElementById('share-contact-form');
+        const headerGridElement = document.querySelector('.header-grid');
+        const floatingContactBar = document.getElementById('floating-contact-bar');
+        const sidebarElement = document.querySelector('.sidebar');
+        const specialtiesHeading = document.getElementById('specialties-heading');
+        const financesSection = document.getElementById('finances-section');
+        const financeJumpTriggers = Array.from(document.querySelectorAll('[data-scroll-to-finances]'));
+        const clientFocusSection = document.getElementById('client-focus-section');
+        const clientFocusJumpTriggers = Array.from(document.querySelectorAll('[data-scroll-to-client-focus]'));
+        const specialtiesJumpTriggers = Array.from(document.querySelectorAll('[data-scroll-to-specialties]'));
+        const endorsementsTrack = document.querySelector('.endorsements-track');
+        const endorsementsCards = endorsementsTrack ? Array.from(endorsementsTrack.querySelectorAll('.endorsements-card')) : [];
+        const endorsementsPrevButton = document.querySelector('.endorsements-control--prev');
+        const endorsementsNextButton = document.querySelector('.endorsements-control--next');
+
+        // TODO: Replace with final public profile URL when available.
+        const SHARE_PROFILE_URL = 'https://example.com/profile-url-placeholder';
+
+        let lastFocusedElement = null;
+        let sidebarReleaseStartScrollY = null;
+        let activeModalCount = 0;
+        let endorsementsIndex = 0;
+
+        const getVisibleEndorsementCount = () => (window.matchMedia('(max-width: 980px)').matches ? 1 : 3);
+
+        const updateEndorsementsCarousel = () => {
+            if (!endorsementsTrack || !endorsementsCards.length) {
+                return;
+            }
+
+            const maxIndex = Math.max(0, endorsementsCards.length - getVisibleEndorsementCount());
+            endorsementsIndex = Math.min(endorsementsIndex, maxIndex);
+
+            const cardWidth = endorsementsCards[0].getBoundingClientRect().width;
+            const cardGap = 16;
+            endorsementsTrack.style.transform = `translateX(-${(cardWidth + cardGap) * endorsementsIndex}px)`;
+
+            if (endorsementsPrevButton) {
+                endorsementsPrevButton.classList.toggle('endorsements-control--disabled', endorsementsIndex === 0);
+                endorsementsPrevButton.disabled = endorsementsIndex === 0;
+            }
+
+            if (endorsementsNextButton) {
+                endorsementsNextButton.classList.toggle('endorsements-control--disabled', endorsementsIndex >= maxIndex);
+                endorsementsNextButton.disabled = endorsementsIndex >= maxIndex;
+            }
+        };
+
+        const lockPageScroll = () => {
+            if (activeModalCount === 0) {
+                const scrollbarWidth = Math.max(0, window.innerWidth - document.documentElement.clientWidth);
+                document.documentElement.style.setProperty('--modal-scrollbar-compensation', `${scrollbarWidth}px`);
+                document.body.style.overflow = 'hidden';
+                document.body.style.paddingRight = `${scrollbarWidth}px`;
+            }
+            activeModalCount += 1;
+        };
+
+        const unlockPageScroll = () => {
+            activeModalCount = Math.max(0, activeModalCount - 1);
+            if (activeModalCount === 0) {
+                document.documentElement.style.removeProperty('--modal-scrollbar-compensation');
+                document.body.style.overflow = '';
+                document.body.style.paddingRight = '';
+            }
+        };
+
+        const updateFloatingContactBar = () => {
+            if (!floatingContactBar || !headerGridElement) {
+                return;
+            }
+            const shouldShow = headerGridElement.getBoundingClientRect().bottom < 0;
+            floatingContactBar.classList.toggle('is-visible', shouldShow);
+            floatingContactBar.setAttribute('aria-hidden', shouldShow ? 'false' : 'true');
+        };
+
+        const updateSidebarScrollBehavior = () => {
+            if (!sidebarElement || !specialtiesHeading) {
+                return;
+            }
+
+            const headingTop = specialtiesHeading.getBoundingClientRect().top;
+            const triggerReached = headingTop <= window.innerHeight;
+
+            if (!triggerReached) {
+                sidebarReleaseStartScrollY = null;
+                sidebarElement.style.top = '16px';
+                sidebarElement.classList.remove('sidebar-unstuck');
+                sidebarElement.style.removeProperty('--sidebar-release-offset');
+                return;
+            }
+
+            if (sidebarReleaseStartScrollY === null) {
+                sidebarReleaseStartScrollY = window.scrollY;
+            }
+
+            const scrollDeltaSinceRelease = Math.max(0, window.scrollY - sidebarReleaseStartScrollY);
+            const dynamicStickyTop = 16 - scrollDeltaSinceRelease;
+            sidebarElement.style.top = `${dynamicStickyTop.toFixed(2)}px`;
+            sidebarElement.classList.remove('sidebar-unstuck');
+            sidebarElement.style.removeProperty('--sidebar-release-offset');
+        };
+
+        const updateViewportBehavior = () => {
+            updateFloatingContactBar();
+            updateSidebarScrollBehavior();
+        };
+
+        const scrollToSection = (targetSection) => {
+            if (!targetSection) {
+                return;
+            }
+
+            // Keep target content visible below fixed header popdown/floating bar.
+            const baseBuffer = 14;
+            const floatingBarHeight = floatingContactBar && headerGridElement && headerGridElement.getBoundingClientRect().bottom < 0
+                ? floatingContactBar.getBoundingClientRect().height
+                : 0;
+            const targetY = window.scrollY + targetSection.getBoundingClientRect().top - floatingBarHeight - baseBuffer;
+
+            window.scrollTo({
+                top: Math.max(0, targetY),
+                behavior: 'smooth'
+            });
+        };
+
+        const scrollToFinances = () => {
+            scrollToSection(financesSection);
+        };
+
+        const scrollToSpecialties = () => {
+            scrollToSection(specialtiesHeading);
+        };
+
+        const scrollToClientFocus = () => {
+            scrollToSection(clientFocusSection);
+        };
+
+        const openEmailModal = () => {
+            if (!emailModal || !modalContainer) {
+                return;
+            }
+            lastFocusedElement = document.activeElement;
+            emailModal.hidden = false;
+            lockPageScroll();
+            const firstInput = emailModal.querySelector('input, textarea, button');
+            if (firstInput) {
+                firstInput.focus();
+            }
+        };
+
+        const closeEmailModal = () => {
+            if (!emailModal) {
+                return;
+            }
+            emailModal.hidden = true;
+            unlockPageScroll();
+            if (lastFocusedElement && typeof lastFocusedElement.focus === 'function') {
+                lastFocusedElement.focus();
+            }
+        };
+
+        const openShareModal = () => {
+            if (!shareModal || !shareModalContainer) {
+                return;
+            }
+            lastFocusedElement = document.activeElement;
+            shareModal.hidden = false;
+            lockPageScroll();
+            const firstInput = shareModal.querySelector('input, textarea, button');
+            if (firstInput) {
+                firstInput.focus();
+            }
+        };
+
+        const closeShareModal = () => {
+            if (!shareModal) {
+                return;
+            }
+            shareModal.hidden = true;
+            unlockPageScroll();
+            if (lastFocusedElement && typeof lastFocusedElement.focus === 'function') {
+                lastFocusedElement.focus();
+            }
+        };
+
+        openModalButtons.forEach((button) => {
+            button.addEventListener('click', openEmailModal);
+        });
+
+        closeModalButtons.forEach((button) => {
+            button.addEventListener('click', closeEmailModal);
+        });
+
+        openShareButtons.forEach((button) => {
+            button.addEventListener('click', openShareModal);
+        });
+
+        financeJumpTriggers.forEach((trigger) => {
+            trigger.addEventListener('click', (event) => {
+                event.preventDefault();
+                scrollToFinances();
+            });
+
+            trigger.addEventListener('keydown', (event) => {
+                if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault();
+                    scrollToFinances();
+                }
+            });
+        });
+
+        specialtiesJumpTriggers.forEach((trigger) => {
+            trigger.addEventListener('click', (event) => {
+                event.preventDefault();
+                scrollToSpecialties();
+            });
+
+            trigger.addEventListener('keydown', (event) => {
+                if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault();
+                    scrollToSpecialties();
+                }
+            });
+        });
+
+        clientFocusJumpTriggers.forEach((trigger) => {
+            trigger.addEventListener('click', (event) => {
+                event.preventDefault();
+                scrollToClientFocus();
+            });
+
+            trigger.addEventListener('keydown', (event) => {
+                if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault();
+                    scrollToClientFocus();
+                }
+            });
+        });
+
+        closeShareButtons.forEach((button) => {
+            button.addEventListener('click', closeShareModal);
+        });
+
+        if (endorsementsPrevButton) {
+            endorsementsPrevButton.addEventListener('click', () => {
+                endorsementsIndex = Math.max(0, endorsementsIndex - 1);
+                updateEndorsementsCarousel();
+            });
+        }
+
+        if (endorsementsNextButton) {
+            endorsementsNextButton.addEventListener('click', () => {
+                const maxIndex = Math.max(0, endorsementsCards.length - getVisibleEndorsementCount());
+                endorsementsIndex = Math.min(maxIndex, endorsementsIndex + 1);
+                updateEndorsementsCarousel();
+            });
+        }
+
+        window.addEventListener('scroll', updateViewportBehavior, { passive: true });
+        window.addEventListener('resize', () => {
+            updateViewportBehavior();
+            updateEndorsementsCarousel();
+        });
+        updateViewportBehavior();
+        updateEndorsementsCarousel();
+
+        if (emailModal && modalContainer) {
+            emailModal.addEventListener('click', (event) => {
+                if (!modalContainer.contains(event.target)) {
+                    closeEmailModal();
+                }
+            });
+        }
+
+        if (shareModal && shareModalContainer) {
+            shareModal.addEventListener('click', (event) => {
+                if (!shareModalContainer.contains(event.target)) {
+                    closeShareModal();
+                }
+            });
+        }
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape' && shareModal && !shareModal.hidden) {
+                closeShareModal();
+                return;
+            }
+            if (event.key === 'Escape' && emailModal && !emailModal.hidden) {
+                closeEmailModal();
+            }
+        });
+
+        if (emailForm) {
+            emailForm.addEventListener('submit', (event) => {
+                event.preventDefault();
+                closeEmailModal();
+            });
+        }
+
+        if (shareForm) {
+            shareForm.addEventListener('submit', (event) => {
+                event.preventDefault();
+
+                const yourName = (document.getElementById('share-your-name')?.value || '').trim();
+                const yourEmail = (document.getElementById('share-your-email')?.value || '').trim();
+                const friendName = (document.getElementById('share-friend-name')?.value || '').trim();
+                const friendEmail = (document.getElementById('share-friend-email')?.value || '').trim();
+                const message = (document.getElementById('share-message')?.value || '').trim();
+
+                const practitionerName = 'Peggi McCue';
+                const practitionerLocation = 'Arlington';
+                const subject = encodeURIComponent('A practitioner profile you may like');
+                const body = encodeURIComponent(
+                    `${message}\n\n` +
+                    `Practitioner: ${practitionerName}\n` +
+                    `Location: ${practitionerLocation}\n` +
+                    `Profile: ${SHARE_PROFILE_URL}\n\n` +
+                    `Shared by: ${yourName}${yourEmail ? ` (${yourEmail})` : ''}\n` +
+                    `Intended for: ${friendName}`
+                );
+
+                window.location.href = `mailto:${encodeURIComponent(friendEmail)}?subject=${subject}&body=${body}`;
+                closeShareModal();
+            });
+        }
+    })();
+</script>
+<script src="review-mode.js"></script>
+</body>
+</html>
