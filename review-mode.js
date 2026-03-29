@@ -272,7 +272,23 @@
         return DATE_FORMATTER.format(date);
     }
 
-    function exportEdits(edits) {
+    function fallbackDownload(content, filename) {
+        const blob = new Blob([content], { type: "text/plain;charset=utf-8" });
+        const url = URL.createObjectURL(blob);
+        const anchor = document.createElement("a");
+
+        anchor.href = url;
+        anchor.download = filename;
+        document.body.appendChild(anchor);
+        anchor.click();
+        anchor.remove();
+
+        setTimeout(function () {
+            URL.revokeObjectURL(url);
+        }, 500);
+    }
+
+    async function exportEdits(edits) {
         if (!edits.length) {
             alert("No edits to export yet.");
             return;
@@ -304,21 +320,48 @@
             "",
             blocks.join("\n")
         ].join("\n");
-
-        const blob = new Blob([content], { type: "text/plain;charset=utf-8" });
-        const url = URL.createObjectURL(blob);
-        const anchor = document.createElement("a");
         const stamp = new Date().toISOString().replace(/[:.]/g, "-");
+        const filename = "review-instructions-" + stamp + ".txt";
+        const bytes = new TextEncoder().encode(content);
 
-        anchor.href = url;
-        anchor.download = "review-instructions-" + stamp + ".txt";
-        document.body.appendChild(anchor);
-        anchor.click();
-        anchor.remove();
+        if (typeof window.showSaveFilePicker === "function") {
+            try {
+                const handle = await window.showSaveFilePicker({
+                    suggestedName: filename,
+                    types: [{
+                        description: "Text files",
+                        accept: { "text/plain": [".txt"] }
+                    }]
+                });
 
-        setTimeout(function () {
-            URL.revokeObjectURL(url);
-        }, 500);
+                const writable = await handle.createWritable();
+                await writable.write({
+                    type: "write",
+                    position: 0,
+                    data: bytes
+                });
+                await writable.truncate(bytes.byteLength);
+                await writable.close();
+
+                if (typeof handle.getFile === "function") {
+                    const savedFile = await handle.getFile();
+                    const savedText = savedFile ? await savedFile.text() : "";
+                    if (!savedText || savedText.indexOf("Peggi Site Review Instructions") === -1) {
+                        throw new Error("Saved file appears empty");
+                    }
+                }
+
+                return;
+            } catch (error) {
+                if (error && error.name === "AbortError") {
+                    return;
+                }
+                // Continue with fallback when picker is unavailable in current context.
+            }
+        }
+
+        fallbackDownload(content, filename);
+        alert("File saved using browser download flow. If you want a Save As location prompt every time, enable your browser's 'Ask where to save each file' setting.");
     }
 
     function createUi() {
@@ -673,8 +716,8 @@
             addEdit(fields);
         });
 
-        fields.exportBtn.addEventListener("click", function () {
-            exportEdits(state.edits);
+        fields.exportBtn.addEventListener("click", async function () {
+            await exportEdits(state.edits);
         });
 
         fields.clear.addEventListener("click", function () {
