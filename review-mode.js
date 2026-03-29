@@ -377,18 +377,6 @@
             + "    <label class='rm-label' for='rm-requested'>Requested Change</label>"
             + "    <textarea class='rm-textarea' id='rm-requested' placeholder='Describe what should change...'></textarea>"
             + "  </div>"
-            + "  <div class='rm-row'>"
-            + "    <label class='rm-label' for='rm-priority'>Priority</label>"
-            + "    <select class='rm-select' id='rm-priority'>"
-            + "      <option value='high'>High</option>"
-            + "      <option value='medium' selected>Medium</option>"
-            + "      <option value='low'>Low</option>"
-            + "    </select>"
-            + "  </div>"
-            + "  <div class='rm-row'>"
-            + "    <label class='rm-label' for='rm-note'>Client Note</label>"
-            + "    <textarea class='rm-textarea' id='rm-note' placeholder='Optional context'></textarea>"
-            + "  </div>"
             + "  <div class='rm-actions'>"
             + "    <button class='rm-btn rm-btn-primary' id='rm-add' type='button'>Add Edit</button>"
             + "    <button class='rm-btn rm-btn-neutral' id='rm-export' type='button'>Export TXT</button>"
@@ -416,8 +404,6 @@
             current: document.getElementById("rm-current"),
             changeType: document.getElementById("rm-change-type"),
             requested: document.getElementById("rm-requested"),
-            priority: document.getElementById("rm-priority"),
-            note: document.getElementById("rm-note"),
             add: document.getElementById("rm-add"),
             exportBtn: document.getElementById("rm-export"),
             clear: document.getElementById("rm-clear"),
@@ -654,10 +640,10 @@
             selector: buildSelector(state.selectedElement),
             element: state.selectedElement.tagName.toLowerCase(),
             changeType: fields.changeType.value,
-            priority: fields.priority.value,
+            priority: "medium",
             current: fields.current.value,
             requested: requested,
-            note: fields.note.value.trim(),
+            note: "",
             path: window.location.pathname
         };
 
@@ -666,7 +652,6 @@
         renderEdits(fields);
 
         fields.requested.value = "";
-        fields.note.value = "";
     }
 
     function bindEvents(fields) {
