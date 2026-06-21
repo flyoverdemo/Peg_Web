@@ -251,7 +251,7 @@
             margin: 10px 0 0;
             font-size: 16px;
             line-height: 1.5;
-            color: #c62828;
+            color: #233449;
         }
 
         .profile-intro-block {
@@ -448,11 +448,22 @@
         }
 
         .qualifications-section h2 {
-            margin: 0 0 20px;
+            margin: 0 0 12px;
             font-size: 22px;
             line-height: 1.05;
             letter-spacing: -0.01em;
             color: #2c2d30;
+        }
+
+        .qualifications-license-list {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            margin: 0 0 18px;
+        }
+
+        .qualifications-license-list .qualifications-line + .qualifications-line {
+            margin-top: 0;
         }
 
         .qualifications-verified-card {
@@ -512,14 +523,14 @@
         }
 
         .qualifications-group + .qualifications-group {
-            margin-top: 20px;
+            margin-top: 24px;
         }
 
         .qualifications-layout {
             display: grid;
             grid-template-columns: minmax(0, 1fr) 402px;
             gap: 40px;
-            align-items: center;
+            align-items: start;
         }
 
         .qualifications-main {
@@ -539,7 +550,7 @@
         }
 
         .qualifications-group-title {
-            margin: 0 0 7px;
+            margin: 0 0 10px;
             display: flex;
             align-items: center;
             gap: 8px;
@@ -547,6 +558,10 @@
             line-height: 1.15;
             font-weight: 700;
             color: #2c2d30;
+        }
+
+        .qualifications-group .qualifications-line + .qualifications-line {
+            margin-top: 6px;
         }
 
         .qualifications-group-icon {
@@ -712,6 +727,26 @@
             color: #2c2d30;
         }
 
+        .finance-subheading--section {
+            display: block;
+            margin: 0 0 12px;
+            font-size: 22px;
+            line-height: 1.15;
+            letter-spacing: -0.01em;
+        }
+
+        .finance-subheader-copy {
+            margin: 0;
+            font-size: 18px;
+            line-height: 1.35;
+            font-weight: 400;
+            color: #2c2d30;
+        }
+
+        .finance-subheader-copy + .finance-copy {
+            margin-top: 10px;
+        }
+
         .finance-subheading-icon {
             width: 18px;
             height: 18px;
@@ -747,7 +782,9 @@
             padding: 0;
             list-style: none;
             display: grid;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
+            grid-template-columns: minmax(0, 190px) minmax(0, 280px);
+            grid-template-rows: repeat(7, auto);
+            grid-auto-flow: column;
             column-gap: 48px;
             row-gap: 8px;
         }
@@ -756,6 +793,7 @@
             font-size: 16px;
             line-height: 1.35;
             color: #2c2d30;
+            white-space: nowrap;
         }
 
         .finance-insurance-list--pending li {
@@ -1727,13 +1765,6 @@
             margin: 0;
             font-size: 15px;
             line-height: 1.2;
-        }
-
-        .address-line--struck {
-            text-decoration-line: line-through;
-            text-decoration-color: #c62828;
-            text-decoration-thickness: 2px;
-            text-decoration-skip-ink: none;
         }
 
         .address-line-map-link {
@@ -2732,7 +2763,10 @@
 
                 <div class="profile-intro-block">
                     <p class="intro">
-                        With many years of experience in mental health and addiction services, I provide compassionate, client-centered counseling for individuals, couples, and families. My work focuses on supporting those facing depression, anxiety, trauma, and substance abuse, helping clients navigate challenges and create meaningful, lasting change.
+                        With over thirty years of experience in mental health and addiction services, I am dedicated to providing compassionate, client-centered counseling for individuals, couples, and families. I work with clients experiencing depression, anxiety, trauma, substance use concerns, and life transitions to help them develop the skills and confidence needed for meaningful, lasting change.
+                    </p>
+                    <p class="intro">
+                        My approach is strengths-based and collaborative, focusing on each person's unique abilities, resilience, and potential for growth. I strive to create a safe, supportive environment where clients feel heard, understood, and empowered to explore challenges, gain new perspectives, and move toward their goals.
                     </p>
                     <div class="intro-image-placeholders" aria-label="Image placeholders">
                         <div class="intro-image-placeholder" aria-hidden="true"></div>
@@ -2740,11 +2774,11 @@
                         <div class="intro-image-placeholder" aria-hidden="true"></div>
                     </div>
                     <p class="intro-image-note">Placeholder can be used for office or additional images - can be removed.</p>
-                    <p class="intro">
-                        I take a strengths-based approach, recognizing and building upon each client's unique abilities and resilience. I also conduct comprehensive substance abuse evaluations, offering thoughtful, personalized insights to guide treatment and recovery. My goal is to create a safe, supportive environment where clients feel heard, empowered, and equipped to move forward.
+                    <p class="intro-pending">
+                        In addition to counseling services, I conduct comprehensive substance abuse evaluations, providing thoughtful, individualized assessments that help guide treatment planning and support recovery. Whether you are facing emotional difficulties, relationship concerns, or substance use challenges, I am committed to helping you build healthier coping strategies and a stronger foundation for the future.
                     </p>
                     <p class="intro-pending">
-                        I help you explore fresh perspectives so stress feels less overwhelming and life feels more open. Over time, the goal is for you to feel fully like yourself beyond the therapy room. Message me or visit my website to set up a consultation.
+                        If you are ready to take the next step, I invite you to reach out to schedule a consultation or learn more about how I can help. Message me or visit my website to set up a consultation.
                     </p>
                     <div class="consultation-prompt">
                         Call or <a class="consultation-prompt-link" href="mailto:contact@peggimccue.com">email</a> Peggi McCue now for a <strong>free 15 minute consultation</strong> - <a class="consultation-prompt-link" href="tel:+14028413722">(402) 841-3722</a>
@@ -2793,7 +2827,18 @@
                                         <path d="M4 9.5H20" stroke-width="1.5" stroke-linecap="round"/>
                                     </svg>
                                 </span>
-                                <div>Available both in-person and by phone</div>
+                                <div>Available online, by phone, and in-person</div>
+                            </div>
+                            <div class="at-a-glance_row at-a-glance_row_appointments">
+                                <span class="row-symbol" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="6.75" stroke-width="1.7"/>
+                                        <path d="M5.25 12H18.75" stroke-width="1.7" stroke-linecap="round"/>
+                                        <path d="M12 5.25C10.4 7 9.5 9.4 9.5 12C9.5 14.6 10.4 17 12 18.75" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M12 5.25C13.6 7 14.5 9.4 14.5 12C14.5 14.6 13.6 17 12 18.75" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                                <div>Serving the greater Fremont and Omaha area. Located in Arlington.</div>
                             </div>
                             <div class="at-a-glance_row at-a-glance_row_appointments at-a-glance_row_service-area">
                                 <span class="row-symbol" aria-hidden="true">
@@ -2816,7 +2861,6 @@
                                     </svg>
                                 </span>
                                 <div class="address">
-                                    <p class="address-line address-line--struck">1045 Ash Drive</p>
                                     <p class="address-line"><span>Arlington, NE 68002</span> <a class="address-line-map-link" href="https://maps.google.com/?q=Arlington,+NE+68002" target="_blank" rel="noopener noreferrer">map</a></p>
                                     <a class="address-line phone" href="tel:+14028413722">(402) 841-3722</a>
                                 </div>
@@ -2926,35 +2970,25 @@
                                         <path d="M9 16h4.2"/>
                                     </svg>
                                 </span>
-                                <span>Top Specialties</span>
+                                <span>Top Specialities</span>
                             </h3>
-                            <ul class="specialties-list pending-approval-list">
-                                <li>Stress</li>
+                            <ul class="specialties-list specialties-list--columns">
                                 <li>Anxiety</li>
-                                <li>Life Transitions</li>
-                            </ul>
-                        </div>
-
-                        <div class="specialties-group">
-                            <h3 class="specialties-group-title">
-                                <span class="specialties-group-icon" aria-hidden="true">
-                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M7 5.5h7.8l4.7 4.7V18a1.5 1.5 0 0 1-1.5 1.5H7A1.5 1.5 0 0 1 5.5 18V7A1.5 1.5 0 0 1 7 5.5Z"/>
-                                        <path d="M14.8 5.5V10h4.7"/>
-                                        <path d="M9 13.4h6"/>
-                                        <path d="M9 16h4.2"/>
-                                    </svg>
-                                </span>
-                                <span>Expertise</span>
-                            </h3>
-                            <ul class="specialties-list specialties-list--columns pending-approval-list">
-                                <li>Burnout</li>
-                                <li>Coping Skills</li>
                                 <li>Depression</li>
-                                <li>Relationship Issues</li>
-                                <li>Sleep or Insomnia</li>
+                                <li>Substance Abuse</li>
+                                <li>Anger Management</li>
+                                <li>Bipolar Disorder</li>
+                                <li>Codependency</li>
+                                <li>Coping Skills</li>
+                                <li>Grief</li>
+                                <li>Mood Disorders</li>
+                                <li>Peer Relationships</li>
                                 <li>Self Esteem</li>
-                                <li>LGBTQ+</li>
+                                <li>Sleep or Insomnia</li>
+                                <li>Stress</li>
+                                <li>Trauma and PTSD</li>
+                                <li>Veterans</li>
+                                <li>Women's Issues</li>
                             </ul>
                         </div>
                     </div>
@@ -3007,7 +3041,7 @@
                                 </span>
                                 <span>Payment Methods</span>
                             </h3>
-                            <p class="finance-copy finance-copy--pending">American Express, Cash, Check, Discover, Mastercard, Visa</p>
+                            <p class="finance-copy">Cash, Check</p>
                         </div>
 
                         <div class="finance-subsection">
@@ -3021,17 +3055,27 @@
                                 </span>
                                 <span>Insurance</span>
                             </h3>
-                            <ul class="finance-insurance-list finance-insurance-list--pending" aria-label="Accepted insurance plans">
+                            <ul class="finance-insurance-list" aria-label="Accepted insurance plans">
                                 <li>Aetna</li>
-                                <li>Midlands Choice</li>
-                                <li>Blue Cross</li>
-                                <li>MultiPlan</li>
-                                <li>Blue Shield</li>
-                                <li>Nebraska Medicine Employee</li>
+                                <li>Ambetter</li>
                                 <li>BlueCross and BlueShield</li>
-                                <li>Out of Network</li>
-                                <li>First Choice Health | FCH</li>
+                                <li>Cigna and Evernorth</li>
+                                <li>Medica</li>
+                                <li>Medicaid</li>
+                                <li>Midlands Choice</li>
+                                <li>Molina Healthcare</li>
+                                <li>Nebraska Total Care</li>
+                                <li>Optum</li>
+                                <li>United Medical Resources (UMR)</li>
+                                <li>UnitedHealthcare UHC | UBH</li>
+                                <li>WellCare</li>
                             </ul>
+                        </div>
+
+                        <div class="finance-subsection">
+                            <h3 class="finance-subheading finance-subheading--section">Employee Assistance Programs</h3>
+                            <p class="finance-subheader-copy">I work with many employee assistance programs.</p>
+                            <p class="finance-copy">I am an in-network provider for most major insurance companies, but can also provide a sliding scale fee for my out-of-network clients. Please feel free to reach out with any insurance and fee questions you have.</p>
                         </div>
                     </div>
 
@@ -3069,17 +3113,10 @@
                 <h2>Qualifications</h2>
                 <div class="qualifications-layout">
                     <div class="qualifications-main">
-                        <div class="qualifications-verified-card" aria-label="Verified credentials">
-                            <span class="qualifications-verified-seal cool-verified" aria-hidden="true">
-                                <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                    <path d="M15.249 7.263 14 6.015V4.25A1.75 1.75 0 0 0 12.25 2.5h-1.765L9.237 1.25a1.75 1.75 0 0 0-2.474 0L5.515 2.5H3.75A1.75 1.75 0 0 0 2 4.25v1.765L.751 7.263a1.75 1.75 0 0 0 0 2.474L2 10.985v1.765A1.75 1.75 0 0 0 3.75 14.5h1.765l1.248 1.249a1.75 1.75 0 0 0 2.474 0l1.248-1.248h1.765A1.75 1.75 0 0 0 14 12.751v-1.765l1.249-1.25a1.75 1.75 0 0 0 0-2.473Zm-3.784-.8-3.923 5a.75.75 0 0 1-.564.287h-.026a.75.75 0 0 1-.557-.247L4.568 9.48a.75.75 0 1 1 1.114-1.006l1.23 1.362 3.374-4.3a.75.75 0 1 1 1.179.927Z"></path>
-                                </svg>
-                            </span>
-                            <div class="qualifications-verified-content">
-                                <p class="qualifications-verified-license">Licensed by State of Nebraska / <span class="pending-approval">3411</span></p>
-                                <p class="qualifications-verified-name">Peggi McCue</p>
-                                <p class="qualifications-verified-role">Licensed Independent Mental Health Practitioner , LIMHP, LADC</p>
-                            </div>
+                        <div class="qualifications-license-list">
+                            <p class="qualifications-line">Licensed Independent Mental Health Practitioner</p>
+                            <p class="qualifications-line">Licensed Alcohol and Drug Counselor</p>
+                            <p class="qualifications-line">Licensed by the State of Nebraska</p>
                         </div>
 
                         <div class="qualifications-group">
@@ -3094,8 +3131,8 @@
                                 </span>
                                 <span>Education and Years In Practice</span>
                             </h3>
-                            <p class="qualifications-line pending-approval">In Practice for 13 years</p>
-                            <p class="qualifications-line pending-approval">Attended Tulane University, Master of Social Work, Graduated 2013</p>
+                            <p class="qualifications-line">In Practice for 30+ years</p>
+                            <p class="qualifications-line">Attended WAYNE STATE COLLEGE and graduated in 1995.</p>
                         </div>
 
                         <div class="qualifications-group">
@@ -3110,9 +3147,7 @@
                                 </span>
                                 <span>Additional Credentials</span>
                             </h3>
-                            <p class="qualifications-line pending-approval">Certificate from Drishti International-Certified Yoga Teacher</p>
-                            <p class="qualifications-year pending-approval">2016</p>
-                            <p class="qualifications-line pending-approval">Certificate from American Society of Clinical Hypnosis-Level 2 Completion</p>
+                            <p class="qualifications-line">Certificate from EMDR Support Network.</p>
                         </div>
                     </div>
 
@@ -3152,28 +3187,16 @@
                     <div class="client-focus-tile">
                         <div class="client-focus-icon age-focus" aria-hidden="true"></div>
                         <h3 class="client-focus-group-title">Age</h3>
-                        <div class="client-focus-item"><span class="client-focus-description pending-approval">Adults <span class="force-no-highlight">,&nbsp;</span></span></div>
-                        <div class="client-focus-item"><span class="client-focus-description pending-approval">Elders (65+)</span></div>
+                        <div class="client-focus-item"><span class="client-focus-description">Adults <span class="force-no-highlight">,&nbsp;</span></span></div>
+                        <div class="client-focus-item"><span class="client-focus-description">Elders (65+)</span></div>
                     </div>
 
                     <div class="client-focus-tile">
                         <div class="client-focus-icon modality" aria-hidden="true"></div>
                         <h3 class="client-focus-group-title">Participants</h3>
-                        <div class="client-focus-item"><span class="client-focus-description pending-approval">Individuals <span class="force-no-highlight">,&nbsp;</span></span></div>
-                        <div class="client-focus-item"><span class="client-focus-description pending-approval">Couples</span></div>
+                        <div class="client-focus-item"><span class="client-focus-description">Individuals, Couples, and Families</span></div>
                     </div>
 
-                    <div class="client-focus-tile">
-                        <div class="client-focus-icon categories" aria-hidden="true"></div>
-                        <h3 class="client-focus-group-title">Communities</h3>
-                        <div class="client-focus-item"><span class="client-focus-description pending-approval">Bisexual Allied <span class="force-no-highlight">,&nbsp;</span></span></div>
-                        <div class="client-focus-item"><span class="client-focus-description pending-approval">Gay Allied <span class="force-no-highlight">,&nbsp;</span></span></div>
-                        <div class="client-focus-item"><span class="client-focus-description pending-approval">Lesbian Allied <span class="force-no-highlight">,&nbsp;</span></span></div>
-                        <div class="client-focus-item"><span class="client-focus-description pending-approval">Non-Binary Allied <span class="force-no-highlight">,&nbsp;</span></span></div>
-                        <div class="client-focus-item"><span class="client-focus-description pending-approval">Queer Allied <span class="force-no-highlight">,&nbsp;</span></span></div>
-                        <div class="client-focus-item"><span class="client-focus-description pending-approval">Racial Justice Allied <span class="force-no-highlight">,&nbsp;</span></span></div>
-                        <div class="client-focus-item"><span class="client-focus-description pending-approval">Transgender Allied</span></div>
-                    </div>
                 </div>
             </section>
 
@@ -3192,21 +3215,15 @@
                             <span>Types of Therapy</span>
                         </h3>
 
-                        <ul class="treatment-list pending-approval-list" aria-label="types of therapy">
-                            <li class="has-tooltip">Acceptance and Commitment (ACT)</li>
-                            <li class="has-tooltip">Hypnotherapy</li>
-                            <li class="has-tooltip">Attachment-based</li>
-                            <li class="has-tooltip">Integrative</li>
+                        <ul class="treatment-list" aria-label="types of therapy">
                             <li class="has-tooltip">Cognitive Behavioral (CBT)</li>
-                            <li class="has-tooltip">Jungian</li>
                             <li class="has-tooltip">Compassion Focused</li>
-                            <li class="has-tooltip">Mindfulness-Based (MBCT)</li>
+                            <li class="has-tooltip">Culturally Sensitve</li>
                             <li class="has-tooltip">Existential</li>
-                            <li class="has-tooltip">Psychodynamic</li>
-                            <li class="has-tooltip">Feminist</li>
-                            <li class="has-tooltip">Somatic</li>
-                            <li>Functional Family Therapy</li>
-                            <li>Yoga Integration</li>
+                            <li class="has-tooltip">Inerpersonal</li>
+                            <li class="has-tooltip">Person-Centered</li>
+                            <li class="has-tooltip">Solution Focused Brief (SFBT)</li>
+                            <li class="has-tooltip">Strengh-Based</li>
                         </ul>
                     </div>
 
@@ -3323,8 +3340,7 @@
                                     </div>
 
                                     <div class="location-address-lines">
-                                        <p class="location-address-line address-line address-line--struck">1045 Ash Drive</p>
-                                        <p class="location-address-line">Arlington, NE 68002</p>
+                                        <p class="location-address-line">Fremont/Omaha and Nebraska Area.</p>
                                         <a class="location-address-phone" href="tel:+1-402-841-3722">(402) 841-3722</a>
                                     </div>
 
